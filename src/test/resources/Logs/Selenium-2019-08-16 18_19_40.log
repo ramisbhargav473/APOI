@@ -1,0 +1,20 @@
+[INFO ] 2019-08-16 18:19:45 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-16 18:19:51 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-16 18:19:54 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:19:54 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:19:59 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:20:00 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:20:00 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:20:04 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:20:05 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:20:05 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:20:09 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:20:10 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:20:10 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:20:14 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:20:15 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:20:15 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:20:21 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:20:22 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:20:22 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:20:27 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed

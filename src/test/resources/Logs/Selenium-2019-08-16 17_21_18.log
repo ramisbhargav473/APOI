@@ -1,0 +1,56 @@
+[INFO ] 2019-08-16 17:21:22 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-16 17:21:29 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-16 17:21:30 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 17:21:30 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 17:21:42 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-08-16 17:21:42 [main] enterInCombobox- No Results found
+[INFO ] 2019-08-16 17:21:45 [main] enterText- ManagerApproval3 is entered in pc_company_name_textfield
+[INFO ] 2019-08-16 17:21:45 [main] enterText- www.manager.approva2l.ca is entered in pc_website_textfield
+[INFO ] 2019-08-16 17:21:46 [main] selectDropdownValue- Selecting rency Naveen from the pc_salesrep_dropdown
+[INFO ] 2019-08-16 17:21:46 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-08-16 17:21:46 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-08-16 17:21:47 [main] enterText- 08/15/2019 is entered in pc_competitor_agreement_expiry_date_textfield
+[INFO ] 2019-08-16 17:21:47 [main] enterText- 08/15/2019 is entered in pc_expiry_date_obtained_on_textfield
+[INFO ] 2019-08-16 17:21:47 [main] clickElement- Clicked on pc_add_contact_button
+[INFO ] 2019-08-16 17:21:50 [main] enterText- ApprContact1 is entered in pc_contact_name_textfield
+[INFO ] 2019-08-16 17:21:50 [main] enterText- Position1 is entered in pc_contact_position_textfield
+[INFO ] 2019-08-16 17:21:50 [main] enterText- ApprContact1@email.com is entered in pc_contact_email_textfield
+[INFO ] 2019-08-16 17:21:50 [main] enterText- 1478952360 is entered in pc_contact_primary_phone_textfield
+[INFO ] 2019-08-16 17:21:51 [main] enterText- 357 is entered in pc_contact_primary_extn_textfield
+[INFO ] 2019-08-16 17:21:51 [main] enterText- 9874563210 is entered in pc_contact_secondary_phone_textfield
+[INFO ] 2019-08-16 17:21:51 [main] enterText- 258 is entered in pc_contact_secondary_extn_textfield
+[INFO ] 2019-08-16 17:21:52 [main] enterText- CompanyAddress1 is entered in pc_company_address_line1_textfield
+[INFO ] 2019-08-16 17:21:52 [main] enterText- CompanyAddress2 is entered in pc_company_address_line2_textfield
+[INFO ] 2019-08-16 17:21:52 [main] enterText- CompanyCity is entered in pc_company_address_city_textfield
+[INFO ] 2019-08-16 17:21:52 [main] selectDropdownValue- Selecting Canada from the pc_company_address_country_dropdown
+[INFO ] 2019-08-16 17:21:53 [main] selectDropdownValue- Selecting Ontario from the pc_company_address_province_dropdown
+[INFO ] 2019-08-16 17:21:53 [main] enterText- L3Z0J9 is entered in pc_company_address_zipcode_textfield
+[INFO ] 2019-08-16 17:21:53 [main] check- pc_billing_address_same_checkbox Checkbox is unchecked
+[INFO ] 2019-08-16 17:21:56 [main] enterText- BillingAddress1 is entered in pc_billing_address_line1_textfield
+[INFO ] 2019-08-16 17:21:56 [main] enterText- BillingAddress2 is entered in pc_billing_address_line2_textfield
+[INFO ] 2019-08-16 17:21:56 [main] enterText- BillingCity is entered in pc_billing_address_city_textfield
+[INFO ] 2019-08-16 17:21:57 [main] selectDropdownValue- Selecting Canada from the pc_billing_address_country_dropdown
+[INFO ] 2019-08-16 17:21:57 [main] selectDropdownValue- Selecting Ontario from the pc_billing_address_province_dropdown
+[INFO ] 2019-08-16 17:21:58 [main] enterText- L3Z0J9 is entered in pc_billing_address_zipcode_textfield
+[INFO ] 2019-08-16 17:21:58 [main] enterText- ApprSite1 is entered in pc_site_name_textfield
+[INFO ] 2019-08-16 17:21:58 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_site_salesrep_dropdown
+[INFO ] 2019-08-16 17:21:58 [main] check- pc_side_address_same_checkbox Checkbox is checked
+[INFO ] 2019-08-16 17:22:01 [main] check- pc_site_contact_same_checkbox Checkbox is checked
+[INFO ] 2019-08-16 17:22:13 [main] enterText- 123456789 is entered in ac_po_number_textfield
+[INFO ] 2019-08-16 17:22:13 [main] enterText- 8/16/2019 is entered in ac_created_on_textfield
+[INFO ] 2019-08-16 17:22:13 [main] enterText- 8/16/2019 is entered in ac_effective_of_textfield
+[INFO ] 2019-08-16 17:22:16 [main] selectDropdownValue- Selecting 5 Year Term from the ac_expires_on_dropdown
+[INFO ] 2019-08-16 17:22:18 [main] selectDropdownValue- Selecting Front End from the slc_service_type_dropdown
+[INFO ] 2019-08-16 17:22:20 [main] enterText- 10 is entered in slc_container_count_textfield
+[INFO ] 2019-08-16 17:22:20 [main] selectDropdownValue- Selecting Weekly from the slc_service_frequency_dropdown
+[INFO ] 2019-08-16 17:22:20 [main] selectDropdownValue- Selecting FL Loose from the slc_container_type_dropdown
+[INFO ] 2019-08-16 17:22:21 [main] selectDropdownValue- Selecting 8 yrd from the slc_container_size_dropdown
+[INFO ] 2019-08-16 17:22:21 [main] selectDropdownValue- Selecting OCC Loose from the slc_material_type_dropdown
+[INFO ] 2019-08-16 17:22:22 [main] selectDropdownValue- Selecting Halifax from the slc_route_dropdown
+[INFO ] 2019-08-16 17:22:22 [main] selectDropdownValue- Selecting Medium Density from the slc_route_density_dropdown
+[INFO ] 2019-08-16 17:22:23 [main] enterText- yard is entered in slc_location_type_textfield
+[INFO ] 2019-08-16 17:22:23 [main] selectDropdownValue- Selecting Scotia Recycle Dartmouth from the slc_disposal_site_dropdown
+[INFO ] 2019-08-16 17:22:23 [main] enterText- 50 is entered in slc_weight_textfield
+[INFO ] 2019-08-16 17:22:24 [main] enterText- 500 is entered in slc_container_rental_fee_textfield
+[INFO ] 2019-08-16 17:22:24 [main] clickElement- Clicked on slc_calculate_button
+[INFO ] 2019-08-16 17:22:58 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed

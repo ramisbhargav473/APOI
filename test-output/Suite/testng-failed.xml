@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="GFL.Wishes.CRM.TestListeners.WishesTestListeners"/>
+  </listeners>
+  <test name="PM Test(failed)">
+    <classes>
+      <class name="CRM.Agreements.UAT_CSAM_CA_TS01_TC01">
+        <methods>
+          <include name="tearDown"/>
+          <include name="CSAM_CA_TS01_TC01" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- CRM.Agreements.UAT_CSAM_CA_TS01_TC01 -->
+    </classes>
+  </test> <!-- PM Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

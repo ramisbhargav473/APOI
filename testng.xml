@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WishesAutomation" parallel="classes" thread-count="8" >
+	<listeners>
+		<listener
+			class-name="CRM.TestListeners.WishesTestListeners"></listener>
+	</listeners>
+	<test thread-count="5" name="PM Test">
+		<classes>
+			<class
+				name="CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01" />
+				<!-- <class
+				name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01" /> -->
+			<!-- <class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC02" /> -->
+			<!-- <class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC03" />
+			<class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC04" />
+			<class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC05" />
+			<class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC06" />
+			<class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC07" /> -->
+				<!-- <class
+				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC08" /> -->
+			<!-- <class name="CRM.Agreements.UAT_CSAM_CA_TS01_TC01" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

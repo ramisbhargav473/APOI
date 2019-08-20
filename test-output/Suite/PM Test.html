@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>TestNG:  PM Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PM Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 30 18:30:02 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18926 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRM.Agreements.UAT_CSAM_CA_TS01_TC01.CSAM_CA_TS01_TC01()'><b>CSAM_CA_TS01_TC01</b><br>Test class: CRM.Agreements.UAT_CSAM_CA_TS01_TC01<br>Parameters: {CSAM_CA_TS01_TC01={AgreementCreate={ac_home_link=, ac_agreements_link=, ac_create_agreement_link=, ac_review_details_link=, ac_customer_copy_link=, ac_agreement_name_combobox=xyzzzzz, ac_agreement_name_options=Create New, ac_po_number_textfield=1234, ac_created_on_textfield=7/30/2019, ac_effective_of_textfield=8/30/2019, ac_mark_as_urgent_checkbox=, ac_expires_on_dropdown_button=yes, ac_expires_on_dropdown_options=1 Year Term, ac_customer_name_combobox=Test3, ac_customer_name_options=Test3, ac_site_name_combobox=, ac_site_name_options=, ac_add_new_site_button=yes, ac_site_name_textfield=CSAM Site1, ac_site_salesrep_dropdown_button=yes, ac_site_salesrep_dropdown_options=Jeevan Teja, ac_site_addressline1_textfield=CSAM Address1, ac_site_addressline2_textfield=CSAM Address2, ac_site_addresscountry_dropdown_button=yes, ac_site_addresscountry_dropdown_options=Canada, ac_site_addressprovince_dropdown_button=yes, ac_site_addressprovince_dropdown_options=Ontario, ac_site_addresscity_textfield=CSAM City, ac_site_addresszipcode_textfield=L3Z0J9, ac_site_contact_primary_checkbox=yes, ac_site_contact_name_textfield=CSAM Contact, ac_site_contact_position_textfield=CSAM Position, ac_site_contact_email_textfield=CSAM@email.com, ac_site_contact_primaryphone_textfield=1234567890, ac_site_contact_primaryextn_textfield=123, ac_site_contact_secondaryphone_textfield=1478529630, ac_site_contact_secondaryextn_textfield=258, ac_site_discard_button=, ac_site_save_button=yes, ac_add_new_service_button=, ac_discard_button=, ac_save_as_quote_button=, ac_next_button=, =,  =}, ServiceLineCreate={slc_home_Link=, slc_agreements_Link=, slc_serviceType_Dropdown_Button=yes, slc_serviceType_Dropdown_Options=Front End, slc_margin_RadioButton=, slc_containerCount_TextField=5, slc_serviceFrequency_Dropdown_Button=yes, slc_serviceFrequency_Dropdown_Options=7 times per week, slc_containerType_Dropdown_Button=yes, slc_containerType_Dropdown_Options=FL Loose, slc_containerSize_Dropdown_Button=yes, slc_containerSize_Dropdown_Options=8 yrd, slc_materialType_Dropdown_Button=yes, slc_materialType_Dropdown_Options=Organic Waste, slc_route_Dropdown_Button=yes, slc_route_Dropdown_Options=Halifax, slc_routeDensity_Dropdown_Button=yes, slc_routeDensity_Dropdown_Options=Medium Density, slc_locationType_TextField=Yard, slc_disposalSite_Dropdown_Button=yes, slc_disposalSite_Dropdown_Options=Miller Compost, slc_weight_TextField=50, slc_uom_Dropdown_Button=yes, slc_uom_Dropdown_Options=KG/Yrd, slc_containerRentalFee_TextField=500, slc_clearCalculations_Button=, slc_calculate_Button=yes, slc_totalSell_Edit_Button=, slc_totalSell_TextField=, slc_totalSell_Cancel_Button=, slc_totalSell_Save_Button=, slc_deliveryFee_ExtraFee_TextField=, slc_extraPickUp_ExtraFee_TextField=, slc_removalFee_ExtraFee_TextField=, slc_relocationFee_ExtraFee_TextField=, slc_adminFee_ExtraFee_TextField=, slc_commoditySurcharge_ExtraFee_TextField=, slc_laboreMinusEdited_ExtraFee_TextField=, slc_additionalServiceFee_ExtraFee_Button=, slc_additional_Name_TextField=, slc_additionalFee_Amount_TextField=, slc_additionalFee_Discard_Button=, slc_additionalFee_Save_Button=, slc_oilFees_RadioButton=, slc_oilFees_Amount_TextField=, slc_environmentalFees_RadioButton=, slc_environmentalFees_Amount_TextField=, slc_recyclingFees_RadioButton=, slc_recyclingFees_Amount_TextField=, slc_additionalNotes_TextField=, slc_serviceLine_Discard_Button=, slc_serviceLine_AddService_Button=}}}</td>
+<td></td>
+<td>18</td>
+<td>CRM.Agreements.UAT_CSAM_CA_TS01_TC01@46d56d67</td></tr>
+</table><p>
+</body>
+</html>

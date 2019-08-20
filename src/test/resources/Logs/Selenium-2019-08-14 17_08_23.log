@@ -1,0 +1,24 @@
+[INFO ] 2019-08-14 17:08:28 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-14 17:08:34 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-14 17:08:36 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-14 17:08:36 [main] onTestStart- CM_EC_ECUS_TS01_TC04 - Test Started
+[INFO ] 2019-08-14 17:08:42 [main] CM_EC_ECus_TS01_TC04- Clicked on the Customers Tab from the Side Navigation
+[INFO ] 2019-08-14 17:08:42 [main] selectDropdownValue- Selecting ALL from the ci_amazon_search_dropdown
+[INFO ] 2019-08-14 17:08:42 [main] enterText- prospectValidation6 is entered in ci_amazon_search_textfield
+[INFO ] 2019-08-14 17:08:43 [main] clickElement- Clicked on ci_amazon_search_search_button
+[INFO ] 2019-08-14 17:08:45 [main] enterText- prospectValidation6_edited is entered in ce_customer_name_textfield
+[INFO ] 2019-08-14 17:08:45 [main] enterText- BillingAddress1_Edited is entered in ce_company_line1_textfield
+[INFO ] 2019-08-14 17:08:46 [main] enterText- BillingAddress2_Edited is entered in ce_company_line2_textfield
+[INFO ] 2019-08-14 17:08:46 [main] selectDropdownValue- Selecting Canada from the ce_company_country_dropdown
+[INFO ] 2019-08-14 17:08:47 [main] selectDropdownValue- Selecting Ontario from the ce_company_province_dropdown
+[INFO ] 2019-08-14 17:08:47 [main] enterText- BillingCity_Edited is entered in ce_company_city_textfield
+[INFO ] 2019-08-14 17:08:47 [main] enterText- L3Z0J9 is entered in ce_company_zipcode_textfield
+[INFO ] 2019-08-14 17:08:52 [main] enterText- SiteNameEdited is entered in se_site_name_textfield
+[INFO ] 2019-08-14 17:08:52 [main] selectDropdownValue- Selecting rency Naveen from the se_sales_rep_dropdown
+[INFO ] 2019-08-14 17:09:03 [main] onTestFailure- CM_EC_ECUS_TS01_TC04 - Test Failed
+[INFO ] 2019-08-15 11:27:38 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-15 11:27:44 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-15 11:27:46 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-15 11:27:46 [main] onTestStart- CM_EC_ECUS_TS01_TC02 - Test Started
+[INFO ] 2019-08-15 11:27:50 [main] onTestFailure- CM_EC_ECUS_TS01_TC02 - Test Failed
+[INFO ] 2019-08-15 11:27:51 [main] onTestFailure- CM_EC_ECUS_TS01_TC02 - Test Failed

@@ -1,0 +1,13 @@
+[INFO ] 2019-08-16 18:40:01 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-16 18:40:08 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-16 18:40:09 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:40:09 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:44:34 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:44:40 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:44:40 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:45:56 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:45:59 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:45:59 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-16 18:47:37 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed
+[INFO ] 2019-08-16 18:47:41 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-16 18:47:41 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
