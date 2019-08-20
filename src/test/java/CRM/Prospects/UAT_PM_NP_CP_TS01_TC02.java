@@ -13,6 +13,14 @@ import CRM.ReusableComponents.ConstantsUtil;
 import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
+/**
+ * 1. Prospect Index
+ * 2. Prospect Index pop-up - Search for a new prospect
+ * 3. Prospect Create Page - Enter mandatory information for 0% and save - Save successful
+ * 
+ * @author jteja
+ *
+ */
 public class UAT_PM_NP_CP_TS01_TC02 extends DriverClass {
 	
 	public static ProspectCreate prospectCreate;

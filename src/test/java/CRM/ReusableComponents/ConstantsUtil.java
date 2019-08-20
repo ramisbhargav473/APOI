@@ -10,6 +10,7 @@ public class ConstantsUtil {
 	public static final String BASE_URL = "https://wishes-uat.azurewebsites.net/";
 	public static final String USER_NAME = "jteja@gflenv.com";
 	public static final String PASSWORD = "Mrudula@90";
+	public static final String TEST_DATA_PATH = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\NewData.xlsx";
 	
 	//Code to get in to the scope of the element
 	public static final String JS_EXECUTOR_SCOPE = "arguments[0].scrollIntoView({block: \"center\"});";

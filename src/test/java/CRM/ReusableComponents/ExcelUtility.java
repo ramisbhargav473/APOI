@@ -33,9 +33,9 @@ public class ExcelUtility {
 	/**
 	 * @param path
 	 */
-	public ExcelUtility() {
+	public ExcelUtility(String path) {
 		try {
-			File file = new File("C:\\Users\\jteja\\WISHES\\TestAutomation\\GFL.Wishes\\src\\test\\resources\\TestData\\NewData.xlsx");
+			File file = new File(path);
 			fileInputStream = new FileInputStream(file);
 			testDataWorkbook = new XSSFWorkbook(fileInputStream);
 			testDataSheet = testDataWorkbook.getSheetAt(0);
