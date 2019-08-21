@@ -14,6 +14,14 @@ import CRM.ReusableComponents.ConstantsUtil;
 import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
+/**
+ * 1. Prospect Index
+ * 2. Prospect Create - Mandatory information at 0% - Save successful
+ * 3. Prospect Edit - Contact information and save at 50% - Save Failure
+ * 
+ * @author jteja
+ *
+ */
 public class UAT_PM_NP_CP_TS01_TC06 extends DriverClass {
 	
 	public static ProspectIndex prospectIndex;
@@ -36,11 +44,22 @@ public class UAT_PM_NP_CP_TS01_TC06 extends DriverClass {
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
 					prospectCreate = prospectIndex.creatingANewProspect();
 					MethodsUtil.customWait();
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isEnabled());
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectCreate.clickSaveAndSubmit();
+					prospectView = prospectCreate.clickSaveAndSubmit();
 					MethodsUtil.customWait();
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
+					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isEnabled());
+					prospectEdit = prospectView.clickEditProspect();
+					MethodsUtil.customWait();
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
+				} else if(sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
+					prospectEdit.clickOnSaveAndSubmit();
+					MethodsUtil.customWait();
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
+					Assert.assertTrue(ConstantsUtil.validation_failure.isDisplayed());
+					Assert.assertTrue(prospectEdit.prospectEditLocators.pe_saveandsubmit_button.isEnabled());
 				}
 			}
 		}
