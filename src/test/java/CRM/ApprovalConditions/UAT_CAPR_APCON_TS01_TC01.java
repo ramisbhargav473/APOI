@@ -25,11 +25,12 @@ import CRM.ViewPages.ProspectView;
 /**
  * This test case is designed to check if the agreement goes for manager approval.
  * 
- * 1. Navigate to C&M to check the condition defined in test data. (All agreements need approval - check/uncheck)
- * 2. Create a prospect with all the details.
- * 3. Create an agreement for the prospect.
- * 4. Create a service line for the agreement.
- * 5. Check if the agreement is under review.
+ * 1. CnM - Mark the desired conditon - Publish successful
+ * 2. Prospect Index
+ * 3. Prospect Create - Create a prospect with site and contact information.
+ * 4. Agreement Create - Create an agreement for the created prospect.
+ * 5. Service Line Create - Create a service line such that it triggers the approval conditions.
+ * 6. Agreement View - Save and submit - Agreement status should be under review.
  * 
  * @author jteja
  *

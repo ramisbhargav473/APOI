@@ -1,0 +1,20 @@
+[INFO ] 2019-08-21 14:49:23 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-21 14:49:31 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-21 14:49:36 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-21 14:49:36 [main] onTestStart- CAPR_APCON_TS01_TC01 - Test Started
+[INFO ] 2019-08-21 14:49:51 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-08-21 14:49:52 [main] enterInCombobox- No Results found
+[INFO ] 2019-08-21 14:49:55 [main] enterText- APCON1 is entered in pc_company_name_textfield
+[INFO ] 2019-08-21 14:49:56 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-08-21 14:49:56 [main] selectLevel- Clicked on Contacted decision maker from pc_prospect_levelindicator
+[INFO ] 2019-08-21 14:49:57 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-08-21 14:49:57 [main] clickElement- Clicked on pc_add_contact_button
+[INFO ] 2019-08-21 14:50:00 [main] enterText- TC7Contact is entered in pc_contact_name_textfield
+[INFO ] 2019-08-21 14:50:00 [main] enterText- TC7Position is entered in pc_contact_position_textfield
+[INFO ] 2019-08-21 14:50:01 [main] enterText- TC7@email.com is entered in pc_contact_email_textfield
+[INFO ] 2019-08-21 14:50:01 [main] enterText- 1234567899 is entered in pc_contact_primary_phone_textfield
+[INFO ] 2019-08-21 14:50:02 [main] enterText- 147 is entered in pc_contact_primary_extn_textfield
+[INFO ] 2019-08-21 14:50:02 [main] enterText- 2589631470 is entered in pc_contact_secondary_phone_textfield
+[INFO ] 2019-08-21 14:50:03 [main] enterText- 258 is entered in pc_contact_secondary_extn_textfield
+[INFO ] 2019-08-21 14:50:17 [main] enterText- 123456789 is entered in ac_po_number_textfield
+[INFO ] 2019-08-21 14:50:48 [main] onTestFailure- CAPR_APCON_TS01_TC01 - Test Failed

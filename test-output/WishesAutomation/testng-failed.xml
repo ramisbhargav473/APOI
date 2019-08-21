@@ -9,7 +9,7 @@
       <class name="CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01">
         <methods>
           <include name="setUp"/>
-          <include name="CAPR_APCON_TS01_TC01" invocation-numbers="4"/>
+          <include name="CAPR_APCON_TS01_TC01" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01 -->

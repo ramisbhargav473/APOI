@@ -30,7 +30,7 @@ public class SLC_LocatorsConstants {
 	public static final String SLC_CLEAR_CALCULATIONS_BUTTON = "front-end-service div[class='button_container_right'] button:nth-child(1)";
 	public static final String SLC_CALCULATE_BUTTON = "front-end-service div[class='full_card top_radius'] button:nth-child(2)";
 	public static final String SLC_MONTHLY_RATE_EDIT_BUTTON = "front-end-service div[class='full_card grey_card calculations_container bottom_radius'] mat-icon[class='mat-icon notranslate mat-primary material-icons ng-star-inserted']";
-	public static final String SLC_MONTHLY_RATE_TEXTFIELD = "front-end-service div[class='full_card grey_card calculations_container bottom_radius'] mat-form-field input[matinputplaceholder='Enter Sell Fee']";
+	public static final String SLC_MONTHLY_RATE_TEXTFIELD = "front-end-service div[class='full_card grey_card calculations_container bottom_radius'] mat-form-field input[placeholder='Enter Monthly Rate']";
 	public static final String SLC_MONTHLY_RATE_CANCEL_BUTTON = "front-end-service div[class='full_card grey_card calculations_container bottom_radius'] mat-icon[class='mat-icon notranslate mat-warn material-icons";
 	public static final String SLC_MONTHLY_RATE_SAVE_BUTTON = "front-end-service div[class='full_card grey_card calculations_container bottom_radius'] mat-icon[class='mat-icon notranslate material-icons mat-icon-no-color']";
 	public static final String SLC_DELIVERY_EXTRAFEE_TEXTFIELD = "front-end-service div[class='full_card'] div[class='fees_wrapper'] div[class='fees_left'] form[formarrayname='serviceFees'] input:nth-child(1)";

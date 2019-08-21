@@ -266,22 +266,27 @@ public class KeywordsUtil extends MethodsUtil {
 	public static void selectRadioValue(String fieldName, String locator, String value) {
 		WebElement radioContainer = wwDriver.findElement(By.cssSelector(locator));
 		List<WebElement> options = radioContainer.findElements(By.tagName(ConstantsUtil.RADIO_OPTIONS));
+		System.out.println(options.get(0).getText());
 
 		int count = 0;
 
 		for (WebElement option : options) {
 			if (option.getText().toLowerCase().trim().contains(value.toLowerCase().trim())) {
-				click(option);
+				WebElement element = option.findElement(By.cssSelector("div[class='mat-radio-container'] div[class='mat-radio-inner-circle']"));
+				click(element);
 				logger.info("Selected " + option.getText() + " from the " + fieldName);
 				extentTest.log(Status.PASS, "Selected " + option.getText() + " from the " + fieldName);
 				count++;
+				break;
 			}
 		}
 
-		if (count == 0) {
-			click(options.get(0));
-			logger.info("Selected " + options.get(0).getText() + " from the " + fieldName);
-			extentTest.log(Status.PASS, "Selected " + options.get(0).getText() + " from the " + fieldName);
+		if (count == 0 && value !=null) {
+			WebElement custom = options.get(options.size()-1).findElement(By.cssSelector("div[class='mat-radio-container'] div[class='mat-radio-inner-circle']"));
+			click(custom);
+			options.get(options.size()-1).findElement(By.cssSelector("input[placeholder='Other']")).sendKeys(value);
+			logger.info("entered " + value + " in the " + fieldName);
+			extentTest.log(Status.PASS, "entered " + value + " in the " + fieldName);
 		}
 	}
 
