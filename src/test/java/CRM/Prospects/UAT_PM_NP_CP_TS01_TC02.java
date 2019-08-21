@@ -41,11 +41,13 @@ public class UAT_PM_NP_CP_TS01_TC02 extends DriverClass {
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
 					prospectCreate = prospectIndex.creatingANewProspect();
 					MethodsUtil.customWait();
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isEnabled());
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
 					prospectView = prospectCreate.clickSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
+					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());
+					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isEnabled());
 				}
 			}
 		}
