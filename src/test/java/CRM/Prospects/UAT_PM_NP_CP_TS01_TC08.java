@@ -25,7 +25,7 @@ import CRM.TestDriver.DriverClass;
  * 1. Prospect Index
  * 2. Prospect Create - Save at 25% - Save successful
  * 3. Site Create - Save successful
- * 4. Agreeement Create - Save as Quote - Successful
+ * 4. Agreement Create - Save as Quote - Successful
  * 
  * Edited
  * 1. Prospect Index (Search from grid)
@@ -112,7 +112,7 @@ public class UAT_PM_NP_CP_TS01_TC08 extends DriverClass {
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
+					prospectView = prospectEdit.clickOnSaveAndSubmit();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
 					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());

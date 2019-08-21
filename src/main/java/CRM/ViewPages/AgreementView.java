@@ -49,6 +49,7 @@ public class AgreementView extends SourcePage {
 	}
 	
 	public AgreementView clickOnSaveAndSubmitConf() {
+		KeywordsUtil.click(agreementViewLocators.av_save_and_submit_button);
 		KeywordsUtil.click(agreementViewLocators.av_submit_conf_button);
 		MethodsUtil.customWait();
 		return PageFactory.initElements(wwDriver, AgreementView.class);
