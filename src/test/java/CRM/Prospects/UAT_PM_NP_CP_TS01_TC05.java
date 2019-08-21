@@ -13,6 +13,13 @@ import CRM.ReusableComponents.ConstantsUtil;
 import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
+/**
+ * 1. Prospect Index
+ * 2. Prospect Create - Save at 25% without contact information - Save Failure
+ * 
+ * @author jteja
+ *
+ */
 public class UAT_PM_NP_CP_TS01_TC05 extends DriverClass {
 
 	public static ProspectIndex prospectIndex;
@@ -37,6 +44,8 @@ public class UAT_PM_NP_CP_TS01_TC05 extends DriverClass {
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
 					prospectCreate.clickSaveAndSubmit();
 					MethodsUtil.customWait();
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
+					Assert.assertTrue(ConstantsUtil.validation_failure.isDisplayed());
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
 				}
 			}

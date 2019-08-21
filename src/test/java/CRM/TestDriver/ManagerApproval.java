@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import CRM.Base.SourcePage;
 import CRM.MainPages.AgreementIndex;
+import CRM.ReusableComponents.ConstantsUtil;
 import CRM.ReusableComponents.ExcelUtility;
 import CRM.ReusableComponents.KeywordsUtil;
 import CRM.ReusableComponents.MethodsUtil;
@@ -23,7 +24,7 @@ public class ManagerApproval extends DriverClass{
 		SourcePage.initialConfigurations();
 		explicitWait = new WebDriverWait(wwDriver, 10);
 		
-		excel = new ExcelUtility();
+		excel = new ExcelUtility(ConstantsUtil.TEST_DATA_PATH);
 		logger.info("Test Data excel is loaded");
 		
 		//Logging in to WISHES application using using the AD login screens.

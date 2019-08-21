@@ -1,5 +1,8 @@
 package CRM.ReusableComponents;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 /**
  * @author jteja
  *
@@ -10,6 +13,7 @@ public class ConstantsUtil {
 	public static final String BASE_URL = "https://wishes-uat.azurewebsites.net/";
 	public static final String USER_NAME = "jteja@gflenv.com";
 	public static final String PASSWORD = "Mrudula@90";
+	public static final String TEST_DATA_PATH = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\NewData.xlsx";
 	
 	//Code to get in to the scope of the element
 	public static final String JS_EXECUTOR_SCOPE = "arguments[0].scrollIntoView({block: \"center\"});";
@@ -18,6 +22,8 @@ public class ConstantsUtil {
 	public static final String GLOBAL_LOADER = "global-loader mat-progress-bar";
 	public static final String OVERLAY_CONTAINER ="div[class='cdk-overlay-container'] div[class='cdk-overlay-connected-position-bounding-box'] div[class='cdk-overlay-pane']";
 	public static final String VALIDATION_MESSAGES = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container";
+	public static final String VALIDATION_SUCCESS = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container success-snack-bar";
+	public static final String VALIDATION_FAILURE = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container validation-snack-bar";
 	public static final String DROPDOWN_OPTIONS = "mat-option";			
 	public static final String RADIO_OPTIONS = "mat-radio-button";
 	public static final String CHECKBOX_OPTIONS = "mat-checkbox";
@@ -25,6 +31,12 @@ public class ConstantsUtil {
 	public static final String DATA_OPTIONS = "td";
 	public static final String ANCHOR_OPTIONS = "a";
 
+	//Validation information messages - WebElements
+	@FindBy(css=VALIDATION_SUCCESS)
+	public static WebElement validation_success;
+	@FindBy(css=VALIDATION_FAILURE)
+	public static WebElement validation_failure;
+	
 	//Page Names
     public static final String ADMIN_SHEET = "Admin";
     public static final String AGREEMENT_CREATE_SHEET = "AgreementCreate";

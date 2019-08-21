@@ -29,7 +29,7 @@ public class DriverClass extends SourcePage{
 		SourcePage.initialConfigurations();
 		explicitWait = new WebDriverWait(wwDriver, 10);
 		
-		excel = new ExcelUtility();
+		excel = new ExcelUtility(ConstantsUtil.TEST_DATA_PATH);
 		logger.info("Test Data excel is loaded");
 		
 		//Logging in to WISHES application using using the AD login screens.

@@ -12,6 +12,14 @@ import CRM.ReusableComponents.ConstantsUtil;
 import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
+/**
+ * 1. Prospect Index
+ * 2. Prospect Index pop-up - Search for a new prospect
+ * 3. Prospect Create Page.
+ * 
+ * @author jteja
+ *
+ */
 public class UAT_PM_NP_CP_TS01_TC01 extends DriverClass {
 
 	public static ProspectIndex prospectIndex;
@@ -32,6 +40,7 @@ public class UAT_PM_NP_CP_TS01_TC01 extends DriverClass {
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
 					prospectCreate = prospectIndex.creatingANewProspect();
 					MethodsUtil.customWait();
+					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
 				}
 			}
