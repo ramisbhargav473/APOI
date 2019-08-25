@@ -35,43 +35,61 @@ public class MethodsUtil extends DriverClass {
 	/***************************************************************************************************************/
 
 	public static void customWait() {
+		
 		try {
+			
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
+		
 			while (wwDriver.findElements(By.cssSelector("global-loader mat-progress-bar")).size() > 0 || wwDriver
 					.findElements(By.cssSelector(
 							"mat-sidenav-container mat-sidenav-content[class='mat-drawer-content mat-sidenav-content global-loader-loading']"))
 					.size() > 0) {
 			}
-			while (wwDriver.findElements(By.cssSelector("mat-spinner")).size() > 0) {
+			
+			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
+					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
 			}
+			
 			while (wwDriver.findElements(By.cssSelector(ConstantsUtil.OVERLAY_CONTAINER)).size() > 0) {
 			}
+			
 			while (wwDriver
 					.findElements(By.cssSelector("div[class='container_card cards__container ng-star-inserted']"))
 					.size() < 0) {
-			}while(wwDriver.findElements(By.cssSelector(ConstantsUtil.VALIDATION_MESSAGES)).size() > 0) {
 			}
+			
+			while(wwDriver.findElements(By.cssSelector(ConstantsUtil.VALIDATION_MESSAGES)).size() > 0) {
+			}
+			
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		} catch (Exception e) {
+		
 		}
 	}
 	
 	/***************************************************************************************************************/
 
 	public static void loaderWait() {
+		
 		try {
+		
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
+			
 			while (wwDriver.findElements(By.cssSelector("global-loader mat-progress-bar")).size() > 0 || wwDriver
 					.findElements(By.cssSelector(
 							"mat-sidenav-container mat-sidenav-content[class='mat-drawer-content mat-sidenav-content global-loader-loading']"))
 					.size() > 0) {
 			}
-			while (wwDriver.findElements(By.cssSelector("mat-spinner")).size() > 0) {
+			
+			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
+					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
 			}
-			while(wwDriver.findElements(By.cssSelector(ConstantsUtil.VALIDATION_MESSAGES)).size() > 0) {
-			}
+			
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		} catch (Exception e) {
+		
 		}
 	}
 	
@@ -79,26 +97,19 @@ public class MethodsUtil extends DriverClass {
 	/***************************************************************************************************************/
 
 	public static void spinnerWait() {
+		
 		try {
+		
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-			while (wwDriver.findElements(By.cssSelector("mat-spinner")).size() > 0) {
-			}wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		} catch (Exception e) {
-		}
-	}
-	
-	/***************************************************************************************************************/
-
-	public static void hardWait() {
-		System.out.println("entered");
-		try {
-			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-			while(wwDriver.findElements(By.cssSelector("div[class='cdk-overlay-container'] div[class='cdk-overlay-pane'] mat-option[class='mat-option ng-star-inserted'])")).size()<0) {
-				System.out.println("loading");
+			
+			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
+					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
 			}
-			System.out.println("loaded");
+			
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		} catch (Exception e) {
+		
 		}
 	}
 	

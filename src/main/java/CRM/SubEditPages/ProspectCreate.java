@@ -45,13 +45,13 @@ public class ProspectCreate extends SourcePage {
 	
 	public ProspectView clickSaveAndSubmit() {
 		prospectCreateLocators.pc_save_and_submit_button.click();
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectView.class);
 	}
 	
 	public ProspectIndex clickDiscard() {
 		prospectCreateLocators.pc_discard_button.click();
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectIndex.class);
 	}
 	

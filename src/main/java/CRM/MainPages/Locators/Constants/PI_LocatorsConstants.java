@@ -44,7 +44,7 @@ public class PI_LocatorsConstants {
 	public static final String PI_LESS_FILTERS_BUTTON = "filters mat-accordion mat-expansion-panel mat-expansion-panel-header[aria-expanded='true']";
 	public static final String PI_SEARCH_RESULTS_LIMIT_DROPDOWN = "prospects div[class='prospectsComponent'] div[class='container_main prospects_main'] div[class='pagination_header_container'] mat-form-field mat-select div[class='mat-select-arrow']";
 	public static final String PI_CREATEREPORT_BUTTON = "prospects div[class='prospectsComponent'] div[class='container_main prospects_main'] div[class='pagination_header_container'] button";
-	public static final String PI_PROSPECTGRID_RESULTS = "prospects div[class='prospectsComponent'] div[class='container_main prospects_main'] div[class='table-container'] table tbody";
+	public static final String PI_PROSPECTGRID_RESULTS = "prospects div[class='prospectsComponent'] div[class='container_main prospects_main'] div[class='table-container'] table tbody tr td a";
 	
 	@Override
 	public String toString() {

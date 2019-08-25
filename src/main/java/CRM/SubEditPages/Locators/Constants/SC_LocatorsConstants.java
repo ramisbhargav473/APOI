@@ -29,6 +29,8 @@ public class SC_LocatorsConstants {
 	public static final String SC_CONTACT_SECONDARY_EXTN_TEXTFIELD = "input[formcontrolname='secondaryPhoneNumberExtension']";
 	public static final String SC_DISCARD_BUTTON = "div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(1)";
 	public static final String SC_SAVEANDSUBMIT_BUTTON = "div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(2)";
+	public static final String SC_SAVE_SUCCESS_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container success-snack-bar";
+	public static final String SC_SAVE_FAILURE_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container validation-snack-bar";
 
 	@Override
 	public String toString() {

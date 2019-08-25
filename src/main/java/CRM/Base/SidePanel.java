@@ -45,7 +45,7 @@ public class SidePanel {
 	 */
 	public Home clickHome() {
 		KeywordsUtil.click(sidePanelLocators.sp_home_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new Home();
 	}
 	
@@ -54,7 +54,7 @@ public class SidePanel {
 	 */
 	public ProspectIndex clickProspects() {
 		KeywordsUtil.click(sidePanelLocators.sp_prospects_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new ProspectIndex();
 	}
 	
@@ -63,7 +63,7 @@ public class SidePanel {
 	 */
 	public CustomerIndex clickCustomers() {
 		KeywordsUtil.click(sidePanelLocators.sp_customers_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new CustomerIndex();
 	}
 	
@@ -72,7 +72,7 @@ public class SidePanel {
 	 */
 	public AgreementIndex clickAgreements() {
 		KeywordsUtil.click(sidePanelLocators.sp_agreements_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new AgreementIndex();
 	}
 	
@@ -82,7 +82,7 @@ public class SidePanel {
 	 */
 	public Calendar clicknCalendar() {
 		KeywordsUtil.click(sidePanelLocators.sp_calendar_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new Calendar();
 	}
 	
@@ -91,7 +91,7 @@ public class SidePanel {
 	 */
 	public MyReports clickMyReports() {
 		KeywordsUtil.click(sidePanelLocators.sp_my_reports_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new MyReports();
 	}
 	
@@ -100,7 +100,7 @@ public class SidePanel {
 	 */
 	public CDEDashboard clickCDEDashboard() {
 		KeywordsUtil.click(sidePanelLocators.sp_cde_dashboard_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new CDEDashboard();
 	}
 	
@@ -109,7 +109,7 @@ public class SidePanel {
 	 */
 	public BIReporting clickBIReporting() {
 		KeywordsUtil.click(sidePanelLocators.sp_bi_reporting_link);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return new BIReporting();
 	}
 	

@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.aventstack.extentreports.Status;
 
@@ -33,6 +34,7 @@ public class KeywordsUtil extends MethodsUtil {
 	 * @param element
 	 */
 	public static void click(WebElement element) {
+		explicitWait.until(ExpectedConditions.visibilityOf(element));
 		JavascriptExecutor js = (JavascriptExecutor) wwDriver;
 		scope(element);
 		js.executeScript("var evt = document.createEvent('MouseEvents');"
@@ -84,7 +86,7 @@ public class KeywordsUtil extends MethodsUtil {
 		element.clear();
 		element.sendKeys(value);
 		logger.info(value + " is entered in " + fieldName);
-		extentTest.log(Status.PASS, value + " is entered in " + fieldName);
+		extentTest.log(Status.INFO, value + " is entered in " + fieldName);
 	}
 
 	/***************************************************************************************************************/
@@ -108,7 +110,7 @@ public class KeywordsUtil extends MethodsUtil {
 		for (WebElement option : options) {
 			if (option.getText().toLowerCase().trim().equalsIgnoreCase(value.toLowerCase().trim())) {
 				logger.info("Selecting " + option.getText() + " from the " + fieldName);
-				extentTest.log(Status.PASS, "Selecting " + option.getText() + " from the " + fieldName);
+				extentTest.log(Status.INFO, "Selecting " + option.getText() + " from the " + fieldName);
 				option.click();
 				count++;
 				break;
@@ -118,7 +120,7 @@ public class KeywordsUtil extends MethodsUtil {
 		if (count == 0) {
 			click(options.get(0));
 			logger.info("Selected " + options.get(0).getText() + " from the " + fieldName);
-			extentTest.log(Status.PASS, "Selected " + options.get(0).getText() + " from the " + fieldName);
+			extentTest.log(Status.INFO, "Selected " + options.get(0).getText() + " from the " + fieldName);
 		}
 		
 	}
@@ -139,31 +141,31 @@ public class KeywordsUtil extends MethodsUtil {
 		case "0":
 			click(elements.get(0));
 			logger.info("Clicked on "+elements.get(0).getText()+" from "+fieldName);
-			extentTest.log(Status.PASS, "Clicked on "+elements.get(0).getText()+" from "+fieldName);
+			extentTest.log(Status.INFO, "Clicked on "+elements.get(0).getText()+" from "+fieldName);
 			break;
 
 		case "25":
 			click(elements.get(1));
 			logger.info("Clicked on "+elements.get(1).getText()+" from "+fieldName);
-			extentTest.log(Status.PASS, "Clicked on "+elements.get(1).getText()+" from "+fieldName);
+			extentTest.log(Status.INFO, "Clicked on "+elements.get(1).getText()+" from "+fieldName);
 			break;
 
 		case "50":
 			click(elements.get(2));
 			logger.info("Clicked on "+elements.get(2).getText()+" from "+fieldName);
-			extentTest.log(Status.PASS, "Clicked on "+elements.get(2).getText()+" from "+fieldName);
+			extentTest.log(Status.INFO, "Clicked on "+elements.get(2).getText()+" from "+fieldName);
 			break;
 
 		case "75":
 			click(elements.get(3));
 			logger.info("Clicked on "+elements.get(3).getText()+" from "+fieldName);
-			extentTest.log(Status.PASS, "Clicked on "+elements.get(3).getText()+" from "+fieldName);
+			extentTest.log(Status.INFO, "Clicked on "+elements.get(3).getText()+" from "+fieldName);
 			break;
 
 		case "100":
 			click(elements.get(4));
 			logger.info("Clicked on "+elements.get(4).getText()+" from "+fieldName);
-			extentTest.log(Status.PASS, "Clicked on "+elements.get(4).getText()+" from "+fieldName);
+			extentTest.log(Status.INFO, "Clicked on "+elements.get(4).getText()+" from "+fieldName);
 			break;
 		}
 	}
@@ -193,12 +195,12 @@ public class KeywordsUtil extends MethodsUtil {
 			/* actions.moveToElement(element).click().perform(); */
 			click(element);
 			logger.info(fieldName + " Checkbox is checked");
-			extentTest.log(Status.PASS, fieldName + " Checkbox is checked");
+			extentTest.log(Status.INFO, fieldName + " Checkbox is checked");
 		} else if (!check && element.isSelected()) {
 			/* actions.moveToElement(element).click().perform(); */
 			click(element);
 			logger.info(fieldName + " Checkbox is unchecked");
-			extentTest.log(Status.PASS, fieldName + " Checkbox is unchecked");
+			extentTest.log(Status.INFO, fieldName + " Checkbox is unchecked");
 		}
 		Thread.sleep(2000);
 	}
@@ -214,7 +216,7 @@ public class KeywordsUtil extends MethodsUtil {
 		WebElement element = wwDriver.findElement(By.cssSelector(locator));
 		click(element);
 		logger.info("Clicked on "+fieldName);
-		extentTest.log(Status.PASS, "Clicked on "+fieldName);
+		extentTest.log(Status.INFO, "Clicked on "+fieldName);
 	}
 	
 	/***************************************************************************************************************/
@@ -223,12 +225,15 @@ public class KeywordsUtil extends MethodsUtil {
 	 * @param fieldName
 	 * @param element
 	 * @param value
+	 * @throws InterruptedException 
 	 */
-	public static void enterInCombobox(String fieldName, String locator, String value) {
+	public static void enterInCombobox(String fieldName, String locator, String value) throws InterruptedException {
 		WebElement element = wwDriver.findElement(By.cssSelector(locator));
 		scope(element);
-		element.clear();
+		element.click();
+		element.clear(); 
 		element.sendKeys(value);
+		explicitWait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.cssSelector("mat-spinner"), 0));
 		spinnerWait();
 		try {
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
@@ -240,16 +245,17 @@ public class KeywordsUtil extends MethodsUtil {
 			for (WebElement option : options) {
 				if (option.getText().toLowerCase().trim().contains(value.toLowerCase().trim())) {
 					click(option);
-					logger.info("Selected " + option.getText() + " from the " + fieldName);
-					extentTest.log(Status.PASS, "Selected " + option.getText() + " from the " + fieldName);
+					logger.info("Selected " + value + " from the " + fieldName);
+					extentTest.log(Status.INFO, "Selected " + value + " from the " + fieldName);
 					count++;
+					break;
 				}
 			}
 
 			if (count == 0) {
 				click(options.get(0));
-				logger.info("Selected " + options.get(0).getText() + " from the " + fieldName);
-				extentTest.log(Status.PASS, "Selected " + options.get(0).getText() + " from the " + fieldName);
+				logger.info("Selected " + value + " from the " + fieldName);
+				extentTest.log(Status.INFO, "Selected " + value + " from the " + fieldName);
 			}wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
 		} catch(Exception e) {
 			logger.info("No Results found");
@@ -275,7 +281,7 @@ public class KeywordsUtil extends MethodsUtil {
 				WebElement element = option.findElement(By.cssSelector("div[class='mat-radio-container'] div[class='mat-radio-inner-circle']"));
 				click(element);
 				logger.info("Selected " + option.getText() + " from the " + fieldName);
-				extentTest.log(Status.PASS, "Selected " + option.getText() + " from the " + fieldName);
+				extentTest.log(Status.INFO, "Selected " + option.getText() + " from the " + fieldName);
 				count++;
 				break;
 			}
@@ -286,7 +292,7 @@ public class KeywordsUtil extends MethodsUtil {
 			click(custom);
 			options.get(options.size()-1).findElement(By.cssSelector("input[placeholder='Other']")).sendKeys(value);
 			logger.info("entered " + value + " in the " + fieldName);
-			extentTest.log(Status.PASS, "entered " + value + " in the " + fieldName);
+			extentTest.log(Status.INFO, "entered " + value + " in the " + fieldName);
 		}
 	}
 
@@ -309,7 +315,7 @@ public class KeywordsUtil extends MethodsUtil {
 				if (option.getText().toLowerCase().trim().contains(optionValue.toLowerCase().trim())) {
 					checkOption(option, optionValue);
 					logger.info("Selected " + option.getText() + " from the " + fieldName);
-					extentTest.log(Status.PASS, "Selected " + option.getText() + " from the " + fieldName);
+					extentTest.log(Status.INFO, "Selected " + option.getText() + " from the " + fieldName);
 				}
 			}
 		}
@@ -329,7 +335,7 @@ public class KeywordsUtil extends MethodsUtil {
 		for(WebElement result: elements) {
 			
 			if(result.getText().toLowerCase().trim().equalsIgnoreCase(value.toLowerCase().trim())) {
-				System.out.println("eleemnt found");
+				System.out.println("element found");
 				click(result);
 				break;
 			}

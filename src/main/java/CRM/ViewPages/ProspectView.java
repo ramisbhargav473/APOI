@@ -42,7 +42,7 @@ public class ProspectView extends SourcePage{
 	 */
 	public SiteCreate clickCreateSite() {
 		KeywordsUtil.click(prospectViewLocators.CreateSite_Button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, SiteCreate.class);
 	}
 	

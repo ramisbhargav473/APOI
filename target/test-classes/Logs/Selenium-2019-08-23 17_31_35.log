@@ -1,0 +1,11 @@
+[INFO ] 2019-08-23 17:31:40 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-23 17:31:48 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-23 17:31:54 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 17:31:54 [main] onTestStart- SM_NS_FVF_TC06 - Test Started
+[INFO ] 2019-08-23 17:31:56 [main] SM_NS_FVF_TC06- clicked on 'Agreements' from the side navigation bar
+[INFO ] 2019-08-23 17:31:57 [main] enterInCombobox- Selected zzzzz from the ac_agreement_name_combobox
+[INFO ] 2019-08-23 17:31:58 [main] enterText- 1234 is entered in ac_po_number_textfield
+[INFO ] 2019-08-23 17:32:01 [main] enterInCombobox- Selected SM_NS_FVF_TC01 from the ac_customer_name_combobox
+[INFO ] 2019-08-23 17:32:12 [main] onTestFailure- SM_NS_FVF_TC06 - Test Failed
+[INFO ] 2019-08-23 17:32:12 [main] onTestSkipped- SM_NS_FVF_TC07 - Test Skipped
+[INFO ] 2019-08-23 17:32:13 [main] tearDown- Terminating Chrome Driver Instance

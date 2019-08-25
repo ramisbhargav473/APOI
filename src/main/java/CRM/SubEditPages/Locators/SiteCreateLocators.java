@@ -40,5 +40,9 @@ public class SiteCreateLocators {
 	public WebElement sc_discard_button;
 	@FindBy(css = SC_LocatorsConstants.SC_SAVEANDSUBMIT_BUTTON)
 	public WebElement sc_saveandsubmit_button;
+	@FindBy(css = SC_LocatorsConstants.SC_SAVE_SUCCESS_BANNER)
+	public WebElement sc_save_success_banner;
+	@FindBy(css = SC_LocatorsConstants.SC_SAVE_FAILURE_BANNER)
+	public WebElement sc_save_failure_banner;
 
 }

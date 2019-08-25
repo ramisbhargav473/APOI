@@ -1,0 +1,13 @@
+[INFO ] 2019-08-23 13:43:19 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-23 13:43:27 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-23 13:43:34 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 13:43:34 [main] onTestStart- SM_NS_FVF_TC01 - Test Started
+[INFO ] 2019-08-23 13:43:35 [main] SM_NS_FVF_TC01- clicked on 'Prospects' from the side navigation bar
+[INFO ] 2019-08-23 13:43:36 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-08-23 13:43:36 [main] enterInCombobox- No Results found
+[INFO ] 2019-08-23 13:43:38 [main] enterText- SM_NS_FVF_TC01 is entered in pc_company_name_textfield
+[INFO ] 2019-08-23 13:43:38 [main] selectDropdownValue- Selected -- Select -- from the pc_salesrep_dropdown
+[INFO ] 2019-08-23 13:43:38 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-08-23 13:43:38 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-08-23 13:43:54 [main] onTestFailure- SM_NS_FVF_TC01 - Test Failed
+[INFO ] 2019-08-23 13:43:55 [main] tearDown- Terminating Chrome Driver Instance

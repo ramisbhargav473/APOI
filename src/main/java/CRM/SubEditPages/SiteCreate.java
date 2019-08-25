@@ -45,13 +45,13 @@ public class SiteCreate extends SourcePage {
 	
 	public ProspectView clickOnSaveSite() {
 		KeywordsUtil.click(siteCreateLocators.sc_saveandsubmit_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectView.class);
 	}
 	
 	public ProspectView clickOnDiscard() {
 		KeywordsUtil.click(siteCreateLocators.sc_discard_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectView.class);
 	}
 	

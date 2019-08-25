@@ -1,0 +1,14 @@
+[INFO ] 2019-08-23 14:02:06 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-23 14:02:16 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-23 14:02:21 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 14:02:21 [main] onTestStart- SM_NS_FVF_TC01 - Test Started
+[INFO ] 2019-08-23 14:02:23 [main] SM_NS_FVF_TC01- clicked on 'Prospects' from the side navigation bar
+[INFO ] 2019-08-23 14:02:23 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-08-23 14:02:23 [main] enterInCombobox- No Results found
+[INFO ] 2019-08-23 14:02:28 [main] enterText- SM_NS_FVF_TC01 is entered in pc_company_name_textfield
+[INFO ] 2019-08-23 14:02:28 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-08-23 14:02:28 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-08-23 14:02:28 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-08-23 14:02:35 [main] enterText- SiteValidation is entered in sc_site_name_textfield
+[INFO ] 2019-08-23 14:02:35 [main] onTestSuccess- SM_NS_FVF_TC01 - Test Successful
+[INFO ] 2019-08-23 14:02:36 [main] tearDown- Terminating Chrome Driver Instance

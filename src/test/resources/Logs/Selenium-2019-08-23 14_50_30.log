@@ -1,0 +1,12 @@
+[INFO ] 2019-08-23 14:50:34 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-23 14:50:43 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-23 14:50:46 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 14:50:46 [main] onTestStart- SM_NS_FVF_TC02 - Test Started
+[INFO ] 2019-08-23 14:50:48 [main] SM_NS_FVF_TC02- clicked on 'Prospects' from the side navigation bar
+[INFO ] 2019-08-23 14:50:48 [main] check- pi_prospect_search_checkbox Checkbox is unchecked
+[INFO ] 2019-08-23 14:50:50 [main] selectDropdownValue- Selecting All from the pi_amazon_search_dropdown
+[INFO ] 2019-08-23 14:50:51 [main] enterText- SM_NS_FVF_TC01 is entered in pi_amazon_search_textfield
+[INFO ] 2019-08-23 14:50:51 [main] clickElement- Clicked on pi_amazon_search_search_button
+[INFO ] 2019-08-23 14:50:54 [main] enterText- SiteValidation is entered in sc_site_name_textfield
+[INFO ] 2019-08-23 14:50:54 [main] onTestSuccess- SM_NS_FVF_TC02 - Test Successful
+[INFO ] 2019-08-23 14:50:55 [main] tearDown- Terminating Chrome Driver Instance

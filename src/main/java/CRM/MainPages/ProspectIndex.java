@@ -8,6 +8,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import CRM.Base.SourcePage;
 import CRM.MainPages.Locators.ProspectIndexLocators;
 import CRM.MainPages.Locators.Constants.PI_LocatorsConstants;
+import CRM.ReusableComponents.KeywordsUtil;
 import CRM.ReusableComponents.MethodsUtil;
 import CRM.SubEditPages.ProspectCreate;
 import CRM.ViewPages.CustomerView;
@@ -48,8 +49,8 @@ public class ProspectIndex extends SourcePage {
 	 * @return
 	 */
 	public ProspectCreate creatingANewProspect() {
-		prospectIndexLocators.pi_create_prospect_proceed_button.click();
-		MethodsUtil.customWait();
+		KeywordsUtil.click(prospectIndexLocators.pi_create_prospect_proceed_button);
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectCreate.class);
 	}
 	
@@ -57,8 +58,8 @@ public class ProspectIndex extends SourcePage {
 	 * @return
 	 */
 	public ProspectView navigateToExistingProspect() {
-		prospectIndexLocators.pi_create_prospect_proceed_button.click();
-		MethodsUtil.customWait();
+		KeywordsUtil.click(prospectIndexLocators.pi_create_prospect_proceed_button);
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ProspectView.class);
 	}
 	
@@ -66,8 +67,8 @@ public class ProspectIndex extends SourcePage {
 	 * @return
 	 */
 	public CustomerView navigateToExistingCustomer() {
-		prospectIndexLocators.pi_create_prospect_proceed_button.click();
-		MethodsUtil.customWait();
+		KeywordsUtil.click(prospectIndexLocators.pi_create_prospect_proceed_button);
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, CustomerView.class);
 	}
 	

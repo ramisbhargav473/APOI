@@ -46,7 +46,6 @@ public class UAT_PM_NP_CP_TS01_TC02 extends DriverClass {
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
 					prospectView = prospectCreate.clickSaveAndSubmit();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isEnabled());
 				}
 			}

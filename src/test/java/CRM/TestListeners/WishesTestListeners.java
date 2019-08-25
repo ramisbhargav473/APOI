@@ -74,9 +74,8 @@ public class WishesTestListeners extends DriverClass implements ITestListener  {
 		 extentHTMLReporter.config().setReportName("Automation Test Report");
 		 extentHTMLReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		 extentHTMLReporter.config().setTheme(Theme.DARK);
-		 extentHTMLReporter.config().
-		 setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
-		       
+		 extentHTMLReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
+		 extentHTMLReporter.config().setLevel(Status.INFO);      
 	}
 
 	@Override

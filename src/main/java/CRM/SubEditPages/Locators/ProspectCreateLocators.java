@@ -119,5 +119,10 @@ public class ProspectCreateLocators {
 	public WebElement pc_discard_button;
 	@FindBy(css= PC_LocatorsConstants.PC_SAVE_AND_SUBMIT_BUTTON)
 	public WebElement pc_save_and_submit_button;
+	@FindBy(css = PC_LocatorsConstants.PC_SAVE_SUCCESS_BANNER)
+	public WebElement pc_save_success_banner;
+	@FindBy(css = PC_LocatorsConstants.PC_SAVE_FAILURE_BANNER)
+	public WebElement pc_save_failure_banner;
+	
 
 }

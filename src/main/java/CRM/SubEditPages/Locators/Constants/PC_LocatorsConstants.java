@@ -69,7 +69,9 @@ public class PC_LocatorsConstants {
 	public static final String PC_SITE_SECONDARY_EXTN_TEXTFIELD = "div[class='container_main prospect_card ng-star-inserted'] prospect-site  input[id='id_secondaryPhoneNumberExtension']";
 	public static final String PC_DISCARD_BUTTON = "div[class='buttons_sticky_bottom'] button:nth-child(1)";
 	public static final String PC_SAVE_AND_SUBMIT_BUTTON = "div[class='buttons_sticky_bottom'] button:nth-child(2)";
-
+	public static final String PC_SAVE_SUCCESS_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container success-snack-bar";
+	public static final String PC_SAVE_FAILURE_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container validation-snack-bar";
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

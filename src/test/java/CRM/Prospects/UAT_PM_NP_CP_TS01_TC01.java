@@ -13,9 +13,25 @@ import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
 /**
- * 1. Prospect Index
- * 2. Prospect Index pop-up - Search for a new prospect
- * 3. Prospect Create Page.
+ * Test case full description
+ * 
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CP - Form Validation Failure
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC01 - Test Case 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ * 
  * 
  * @author jteja
  *

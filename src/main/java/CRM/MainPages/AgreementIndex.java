@@ -48,7 +48,7 @@ public class AgreementIndex extends SourcePage {
 	 */
 	public AgreementCreate clickOnNewAgreement() {
 		KeywordsUtil.click(agreementIndexLocators.newAgreement_Button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, AgreementCreate.class);
 	}
 

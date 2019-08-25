@@ -49,7 +49,7 @@ public class AgreementCreate extends SourcePage {
 	 */
 	public AgreementIndex clickOnDiscard() {
 		KeywordsUtil.click(agreementCreateLocators.ac_discard_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, AgreementIndex.class);
 	}
 
@@ -58,7 +58,7 @@ public class AgreementCreate extends SourcePage {
 	 */
 	public AgreementView clickOnSaveAsQuote() {
 		KeywordsUtil.click(agreementCreateLocators.ac_save_as_quote_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, AgreementView.class);
 	}
 	
@@ -68,8 +68,17 @@ public class AgreementCreate extends SourcePage {
 	 */
 	public ServiceLineCreate clickOnAddService() {
 		KeywordsUtil.click(agreementCreateLocators.ac_add_new_service_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
 		return PageFactory.initElements(wwDriver, ServiceLineCreate.class);
+	}
+	
+	/**
+	 * @return
+	 */
+	public SiteCreate clickOnSiteCreate() {
+		KeywordsUtil.click(agreementCreateLocators.ac_add_new_site_button);
+		MethodsUtil.loaderWait();
+		return PageFactory.initElements(wwDriver, SiteCreate.class);
 	}
 	
 	

@@ -6,13 +6,20 @@
   </listeners>
   <test name="PM Test(failed)">
     <classes>
-      <class name="CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01">
+      <class name="CRM.Sites.UAT_SM_NS_FVF_TC07">
         <methods>
+          <include name="SM_NS_FVF_TC07" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="CAPR_APCON_TS01_TC01" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01 -->
+      </class> <!-- CRM.Sites.UAT_SM_NS_FVF_TC07 -->
+      <class name="CRM.Sites.UAT_SM_NS_FVF_TC06">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="SM_NS_FVF_TC06" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CRM.Sites.UAT_SM_NS_FVF_TC06 -->
     </classes>
   </test> <!-- PM Test(failed) -->
 </suite> <!-- Failed suite [WishesAutomation] -->

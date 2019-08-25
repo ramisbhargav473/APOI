@@ -31,12 +31,6 @@ public class ConstantsUtil {
 	public static final String DATA_OPTIONS = "td";
 	public static final String ANCHOR_OPTIONS = "a";
 
-	//Validation information messages - WebElements
-	@FindBy(css=VALIDATION_SUCCESS)
-	public static WebElement validation_success;
-	@FindBy(css=VALIDATION_FAILURE)
-	public static WebElement validation_failure;
-	
 	//Page Names
     public static final String ADMIN_SHEET = "Admin";
     public static final String AGREEMENT_CREATE_SHEET = "AgreementCreate";
