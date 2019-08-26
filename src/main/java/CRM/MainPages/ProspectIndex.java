@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import CRM.Base.SourcePage;
 import CRM.MainPages.Locators.ProspectIndexLocators;
@@ -51,6 +52,7 @@ public class ProspectIndex extends SourcePage {
 	public ProspectCreate creatingANewProspect() {
 		KeywordsUtil.click(prospectIndexLocators.pi_create_prospect_proceed_button);
 		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("create"));
 		return PageFactory.initElements(wwDriver, ProspectCreate.class);
 	}
 	

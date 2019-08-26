@@ -20,7 +20,7 @@ import CRM.ReusableComponents.MethodsUtil;
 
 public class DriverClass extends SourcePage {
 
-	public static WebDriverWait explicitWait;
+	
 	public static ExcelUtility excel;
 	public static SoftAssert softAssert;
 	public static ExtentHtmlReporter extentHTMLReporter;
@@ -31,7 +31,7 @@ public class DriverClass extends SourcePage {
 	public void setUp() throws InterruptedException {
 
 		SourcePage.initialConfigurations();
-		explicitWait = new WebDriverWait(wwDriver, 10);
+		
 		
 		/*
 		 * BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

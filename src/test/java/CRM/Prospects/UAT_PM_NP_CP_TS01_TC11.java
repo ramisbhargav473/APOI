@@ -116,7 +116,6 @@ public class UAT_PM_NP_CP_TS01_TC11 extends DriverClass {
 					prospectEdit.clickOnSaveAndSubmit();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
-					Assert.assertTrue(ConstantsUtil.validation_failure.isDisplayed());
 					Assert.assertTrue(prospectEdit.prospectEditLocators.pe_saveandsubmit_button.isEnabled());
 				}
 			}

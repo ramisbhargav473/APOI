@@ -3,6 +3,7 @@ package CRM.Prospects;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -32,21 +33,24 @@ public class UAT_PM_NP_CP_TS01_TC02 extends DriverClass {
 			throws InterruptedException {
 
 		prospectIndex = sidePanel.clickProspects();
-		MethodsUtil.customWait();
+		explicitWait.until(ExpectedConditions.urlContains("prospects"));
 		logger.info("Clicked on the Prospects Tab from the Side Navigation");
-		extentTest.pass("Clicked on 'Prospects' tab from the Side Navigation bar and navigated to the Prospect Index page");
+	
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
+		
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectCreate = prospectIndex.creatingANewProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isEnabled());
+				
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
+				
 					prospectView = prospectCreate.clickSaveAndSubmit();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isEnabled());
+				
 				}
 			}
 		}

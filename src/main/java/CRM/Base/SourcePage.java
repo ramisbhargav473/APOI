@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 /**
@@ -18,6 +19,7 @@ public class SourcePage {
 	public static WebDriver wwDriver;
 	public static SidePanel sidePanel;
 	public static ADLogin adLogin;
+	public static WebDriverWait explicitWait;
 	/* public static MethodsUtil methodsUtil; */
 
 	public static void initialConfigurations() {
@@ -29,6 +31,7 @@ public class SourcePage {
 		wwDriver.manage().window().maximize();
 		wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		wwDriver.manage().deleteAllCookies();
+		explicitWait = new WebDriverWait(wwDriver, 10);
 		// common classes initialization - Side Navigation panel and AD login page.
 		adLogin = new ADLogin(wwDriver);
 		sidePanel = new SidePanel(wwDriver);

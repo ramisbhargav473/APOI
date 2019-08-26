@@ -45,7 +45,6 @@ public class UAT_PM_NP_CP_TS01_TC05 extends DriverClass {
 					prospectCreate.clickSaveAndSubmit();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
-					Assert.assertTrue(ConstantsUtil.validation_failure.isDisplayed());
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
 				}
 			}

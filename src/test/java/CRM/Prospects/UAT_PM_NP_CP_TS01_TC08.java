@@ -88,7 +88,6 @@ public class UAT_PM_NP_CP_TS01_TC08 extends DriverClass {
 					agreementCreate.clickOnSaveAsQuote();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());
 				}
 			}
 		}
@@ -115,7 +114,6 @@ public class UAT_PM_NP_CP_TS01_TC08 extends DriverClass {
 					prospectView = prospectEdit.clickOnSaveAndSubmit();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());
 					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
 				}
 			}

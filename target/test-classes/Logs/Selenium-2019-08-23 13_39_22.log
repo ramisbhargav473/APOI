@@ -1,7 +1,0 @@
-[INFO ] 2019-08-23 13:39:27 [main] setUp- Test Data excel is loaded
-[INFO ] 2019-08-23 13:39:35 [main] setUp- Logged into Wishes Application
-[INFO ] 2019-08-23 13:39:40 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
-[INFO ] 2019-08-23 13:39:40 [main] onTestStart- SM_NS_FVF_TC01 - Test Started
-[INFO ] 2019-08-23 13:39:42 [main] SM_NS_FVF_TC01- clicked on 'Prospects' from the side navigation bar
-[INFO ] 2019-08-23 13:39:42 [main] clickElement- Clicked on pi_new_prospect_button
-[INFO ] 2019-08-23 13:39:42 [main] enterInCombobox- No Results found

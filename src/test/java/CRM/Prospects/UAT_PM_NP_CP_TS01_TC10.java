@@ -116,7 +116,6 @@ public class UAT_PM_NP_CP_TS01_TC10 extends DriverClass {
 					prospectView = prospectEdit.clickOnSaveAndSubmit();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(ConstantsUtil.validation_success.isDisplayed());
 					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
 				}
 			}
