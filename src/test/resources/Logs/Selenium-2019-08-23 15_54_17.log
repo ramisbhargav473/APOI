@@ -1,9 +1,0 @@
-[INFO ] 2019-08-23 15:54:22 [main] setUp- Test Data excel is loaded
-[INFO ] 2019-08-23 15:54:31 [main] setUp- Logged into Wishes Application
-[INFO ] 2019-08-23 15:54:41 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
-[INFO ] 2019-08-23 15:54:41 [main] onTestStart- SM_NS_FVF_TC03 - Test Started
-[INFO ] 2019-08-23 15:54:43 [main] SM_NS_FVF_TC03- clicked on 'Prospects' from the side navigation bar
-[INFO ] 2019-08-23 15:54:43 [main] clickElement- Clicked on pi_new_prospect_button
-[INFO ] 2019-08-23 15:54:44 [main] enterInCombobox- No Results found
-[INFO ] 2019-08-23 15:54:56 [main] onTestFailure- SM_NS_FVF_TC03 - Test Failed
-[INFO ] 2019-08-23 15:54:58 [main] tearDown- Terminating Chrome Driver Instance

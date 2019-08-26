@@ -1,0 +1,19 @@
+[INFO ] 2019-08-23 17:43:36 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-23 17:43:43 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-23 17:43:48 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 17:43:48 [main] onTestStart- SM_NS_FVF_TC06 - Test Started
+[INFO ] 2019-08-23 17:43:52 [main] SM_NS_FVF_TC06- clicked on 'Agreements' from the side navigation bar
+[INFO ] 2019-08-23 17:43:53 [main] enterInCombobox- Selected zzzzz from the ac_agreement_name_combobox
+[INFO ] 2019-08-23 17:43:54 [main] enterText- 1234 is entered in ac_po_number_textfield
+[INFO ] 2019-08-23 17:43:57 [main] enterInCombobox- Selected SM_NS_FVF_TC01 from the ac_customer_name_combobox
+[INFO ] 2019-08-23 17:44:08 [main] onTestFailure- SM_NS_FVF_TC06 - Test Failed
+[INFO ] 2019-08-23 17:44:09 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-23 17:44:09 [main] onTestStart- SM_NS_FVF_TC07 - Test Started
+[INFO ] 2019-08-23 17:44:11 [main] SM_NS_FVF_TC07- clicked on 'Prospects' from the side navigation bar
+[INFO ] 2019-08-23 17:44:11 [main] check- pi_prospect_search_checkbox Checkbox is unchecked
+[INFO ] 2019-08-23 17:44:13 [main] selectDropdownValue- Selecting All from the pi_amazon_search_dropdown
+[INFO ] 2019-08-23 17:44:14 [main] enterText- SM_NS_FVF_TC01 is entered in pi_amazon_search_textfield
+[INFO ] 2019-08-23 17:44:14 [main] clickElement- Clicked on pi_amazon_search_search_button
+[INFO ] 2019-08-23 17:44:21 [main] enterText- 123456 is entered in ac_po_number_textfield
+[INFO ] 2019-08-23 17:44:32 [main] onTestFailure- SM_NS_FVF_TC07 - Test Failed
+[INFO ] 2019-08-23 17:44:34 [main] tearDown- Terminating Chrome Driver Instance

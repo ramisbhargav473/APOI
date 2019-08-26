@@ -8,9 +8,9 @@
 	<test thread-count="5" name="PM Test">
 		<classes>
 			<class
-				name="CRM.Sites.UAT_SM_NS_FVF_TC06" />
-				<class
-				name="CRM.Sites.UAT_SM_NS_FVF_TC07" />
+				name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01" />
+				<!-- <class
+				name="CRM.Sites.UAT_SM_NS_FVF_TC07" /> -->
 				<!-- <class
 				name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01" /> -->
 			<!-- <class

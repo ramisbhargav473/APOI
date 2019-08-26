@@ -1,5 +1,9 @@
 package CRM.TestDriver;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -28,6 +32,12 @@ public class DriverClass extends SourcePage {
 
 		SourcePage.initialConfigurations();
 		explicitWait = new WebDriverWait(wwDriver, 10);
+		
+		/*
+		 * BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 * try { String input = reader.readLine(); } catch (IOException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 		excel = new ExcelUtility(ConstantsUtil.TEST_DATA_PATH);
 		logger.info("Test Data excel is loaded");
