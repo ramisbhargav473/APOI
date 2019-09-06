@@ -1,0 +1,39 @@
+[INFO ] 2019-09-04 17:23:03 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 17:23:09 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 17:23:10 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 17:23:10 [main] onTestStart- PM_NP_CP_TS01_TC10 - Test Started
+[INFO ] 2019-09-04 17:23:17 [main] PM_NP_CP_TS01_TC10- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 17:23:17 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 17:23:18 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 17:23:21 [main] enterText- NewProspect_TC10 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 17:23:22 [main] selectDropdownValue- Selecting rency Naveen from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 17:23:22 [main] selectLevel- Clicked on Contacted decision maker from pc_prospect_levelindicator
+[INFO ] 2019-09-04 17:23:22 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 17:23:23 [main] clickElement- Clicked on pc_add_contact_button
+[INFO ] 2019-09-04 17:23:25 [main] enterText- TC10Contact is entered in pc_contact_name_textfield
+[INFO ] 2019-09-04 17:23:25 [main] enterText- TC10Position is entered in pc_contact_position_textfield
+[INFO ] 2019-09-04 17:23:26 [main] enterText- TC10@email.com is entered in pc_contact_email_textfield
+[INFO ] 2019-09-04 17:23:26 [main] enterText- 1234567899 is entered in pc_contact_primary_phone_textfield
+[INFO ] 2019-09-04 17:23:26 [main] enterText- 45628 is entered in pc_contact_primary_extn_textfield
+[INFO ] 2019-09-04 17:23:26 [main] enterText- 2589631470 is entered in pc_contact_secondary_phone_textfield
+[INFO ] 2019-09-04 17:23:27 [main] enterText- 25856 is entered in pc_contact_secondary_extn_textfield
+[INFO ] 2019-09-04 17:23:27 [main] enterText- AddressLine 1 is entered in pc_company_address_line1_textfield
+[INFO ] 2019-09-04 17:23:27 [main] enterText- AddressLine 1 is entered in pc_company_address_line2_textfield
+[INFO ] 2019-09-04 17:23:28 [main] enterText- Toronto is entered in pc_company_address_city_textfield
+[INFO ] 2019-09-04 17:23:28 [main] selectDropdownValue- Selecting Canada from the pc_company_address_country_dropdown
+[INFO ] 2019-09-04 17:23:28 [main] selectDropdownValue- Selecting Ontario from the pc_company_address_province_dropdown
+[INFO ] 2019-09-04 17:23:29 [main] enterText- M4S 2H2 is entered in pc_company_address_zipcode_textfield
+[INFO ] 2019-09-04 17:23:31 [main] enterText- Yonge & Soudan 10 is entered in pc_site_name_textfield
+[INFO ] 2019-09-04 17:23:32 [main] selectDropdownValue- Selecting rency Naveen from the pc_site_salesrep_dropdown
+[INFO ] 2019-09-04 17:23:32 [main] check- pc_side_address_same_checkbox Checkbox is checked
+[INFO ] 2019-09-04 17:23:34 [main] check- pc_site_contact_same_checkbox Checkbox is checked
+[INFO ] 2019-09-04 17:23:49 [main] onTestFailure- PM_NP_CP_TS01_TC10 - Test Failed
+[INFO ] 2019-09-04 17:23:50 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 17:23:50 [main] onTestStart- PM_NP_CP_TS01_TC10_EDITED - Test Started
+[INFO ] 2019-09-04 17:23:52 [main] PM_NP_CP_TS01_TC10_Edited- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 17:23:53 [main] check- pi_prospect_search_checkbox Checkbox is unchecked
+[INFO ] 2019-09-04 17:23:55 [main] selectDropdownValue- Selecting All from the pi_amazon_search_dropdown
+[INFO ] 2019-09-04 17:23:56 [main] enterText- NewProspect_10 is entered in pi_amazon_search_textfield
+[INFO ] 2019-09-04 17:23:57 [main] clickElement- Clicked on pi_amazon_search_search_button
+[INFO ] 2019-09-04 17:24:24 [main] onTestFailure- PM_NP_CP_TS01_TC10_EDITED - Test Failed
+[INFO ] 2019-09-04 17:24:24 [main] onTestFailure- PM_NP_CP_TS01_TC10_EDITED - Test Failed

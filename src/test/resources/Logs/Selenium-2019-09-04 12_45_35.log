@@ -1,0 +1,11 @@
+[INFO ] 2019-09-04 12:45:40 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 12:45:44 [main] onTestFailure- PM_NP_CP_TS01_TC02 - Test Failed
+[INFO ] 2019-09-04 12:45:44 [main] onTestFailure- PM_NP_CP_TS01_TC02 - Test Failed
+[INFO ] 2019-09-04 12:45:48 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 12:45:49 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 12:45:49 [main] onTestStart- PM_NP_CP_TS01_TC02 - Test Started
+[INFO ] 2019-09-04 12:45:58 [main] PM_NP_CP_TS01_TC02- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 12:45:59 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 12:46:00 [main] enterInCombobox- Selected NewProspect_TC02 from the pi_create_prospect_popup_combobox
+[INFO ] 2019-09-04 12:46:04 [main] onTestFailure- PM_NP_CP_TS01_TC02 - Test Failed
+[INFO ] 2019-09-04 12:46:10 [main] onTestFailure- PM_NP_CP_TS01_TC02 - Test Failed

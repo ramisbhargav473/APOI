@@ -1,0 +1,9 @@
+[INFO ] 2019-08-26 11:25:54 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-08-26 11:26:01 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-08-26 11:26:03 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-08-26 11:26:03 [main] onTestStart- PM_NP_CP_TS01_TC01 - Test Started
+[INFO ] 2019-08-26 11:26:05 [main] PM_NP_CP_TS01_TC01- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-08-26 11:26:05 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-08-26 11:26:07 [main] enterInCombobox- No Results found
+[INFO ] 2019-08-26 11:26:08 [main] onTestSuccess- PM_NP_CP_TS01_TC01 - Test Successful
+[INFO ] 2019-08-26 11:26:09 [main] tearDown- Terminating Chrome Driver Instance

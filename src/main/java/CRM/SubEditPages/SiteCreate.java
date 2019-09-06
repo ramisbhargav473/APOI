@@ -7,6 +7,7 @@ import java.util.LinkedHashMap;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import CRM.Base.SourcePage;
 import CRM.ReusableComponents.KeywordsUtil;
@@ -43,10 +44,18 @@ public class SiteCreate extends SourcePage {
 		return locatorsMap;
 	}
 	
-	public ProspectView clickOnSaveSite() {
+	public ProspectView clickOnSaveSiteSuccess() {
 		KeywordsUtil.click(siteCreateLocators.sc_saveandsubmit_button);
 		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("view"));
 		return PageFactory.initElements(wwDriver, ProspectView.class);
+	}
+	
+	public SiteCreate clickOnSaveSiteFailure() {
+		KeywordsUtil.click(siteCreateLocators.sc_saveandsubmit_button);
+		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("site"));
+		return PageFactory.initElements(wwDriver, SiteCreate.class);
 	}
 	
 	public ProspectView clickOnDiscard() {

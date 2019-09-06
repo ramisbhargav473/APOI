@@ -1,0 +1,22 @@
+[INFO ] 2019-09-04 14:51:26 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 14:51:35 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 14:51:36 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 14:51:36 [main] onTestStart- PM_NP_CP_TS01_TC06 - Test Started
+[INFO ] 2019-09-04 14:51:47 [main] PM_NP_CP_TS01_TC06- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 14:51:47 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 14:51:48 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 14:51:52 [main] enterText- NewProspect_TC06 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 14:51:53 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 14:51:53 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-09-04 14:51:53 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 14:52:00 [main] selectLevel- Clicked on Quoted Prospect from pe_prospect_levelindicator
+[INFO ] 2019-09-04 14:52:00 [main] clickElement- Clicked on pe_add_contact_button
+[INFO ] 2019-09-04 14:52:01 [main] check- pe_primary_contact_checkbox Checkbox is unchecked
+[INFO ] 2019-09-04 14:52:03 [main] enterText- TC06Contact Edit is entered in pe_contact_name_textfield
+[INFO ] 2019-09-04 14:52:03 [main] enterText- TC06PositionEdit is entered in pe_contact_position_textfield
+[INFO ] 2019-09-04 14:52:04 [main] enterText-  TC06emailEdit.com is entered in pe_contact_email_textfield
+[INFO ] 2019-09-04 14:52:04 [main] enterText- 1478529632 is entered in pe_contact_primary_phone_textfield
+[INFO ] 2019-09-04 14:52:04 [main] enterText- 15943 is entered in pe_contact_primary_extn_textfield
+[INFO ] 2019-09-04 14:52:04 [main] enterText- 3579518520 is entered in pe_contact_secondary_phone_textfield
+[INFO ] 2019-09-04 14:52:04 [main] enterText- 25943 is entered in pe_contact_secondary_extn_textfield
+[INFO ] 2019-09-04 14:52:05 [main] onTestSuccess- PM_NP_CP_TS01_TC06 - Test Successful

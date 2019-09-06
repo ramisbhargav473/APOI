@@ -29,10 +29,7 @@ import CRM.TestDriver.DriverClass;
  ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
  *
  * TC01 - Test Case 1
- ****1. Prospect Index - New Prospect (lands on Prospect Create page)
- ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
- ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
- * 
+ ****1. Prospect Index - Search for a new prospect and click on proceed. Should navigate to Prospect Create page.
  * 
  * @author jteja
  *

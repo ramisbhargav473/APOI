@@ -13,8 +13,8 @@ public class ServiceLineCreateLocators {
 	public WebElement slc_agreements_link;
 	@FindBy(css = SLC_LocatorsConstants.SLC_SERVICE_TYPE_DROPDOWN)
 	public WebElement slc_service_type_dropdown;
-	@FindBy(css = SLC_LocatorsConstants.SLC_MARGIN_RADIO)
-	public WebElement slc_margin_radio;
+	@FindBy(css = SLC_LocatorsConstants.SLC_MARGIN_DROPDOWN)
+	public WebElement slc_margin_dropdown;
 	@FindBy(css = SLC_LocatorsConstants.SLC_CONTAINER_COUNT_TEXTFIELD)
 	public WebElement slc_container_count_textfield;
 	@FindBy(css = SLC_LocatorsConstants.SLC_SERVICE_FREQUENCY_DROPDOWN)

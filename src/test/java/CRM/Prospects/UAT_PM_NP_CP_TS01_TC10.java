@@ -22,14 +22,30 @@ import CRM.ViewPages.AgreementView;
 import CRM.ViewPages.ProspectView;
 
 /**
- * 1. Prospect Index
- * 2. Prospect Create - Save at 25% including site information - Save successful
- * 3. Agreeement Create 
- * 4. Service Line Create - Save as Approved/Under Review - Save successful
+ * Test case full description
  * 
- * Edited
- * 1. Prospect Index (Search from grid)
- * 2. Prospect Edit - Save at 75% - Save successful
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CP - Form Validation Failure
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC10 - Test Case 10
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Enter mandatory details and save the prospect with site information - Save Successful
+ ****3. Agreement Create - Create an agreement
+ ****4. Service Line Create - Create a service line and save the agreement (APPROVED/UNDER REVIEW)
+ *
+ *TC10_Edited - Edit scenario test steps
+ ****1. Prospect Index - Search for the prospect that is just created.
+ ****2. Prospect Edit - Edit the prospect and change the prospect level to 50/75 - Save successful.
+ * 
  * @author jteja
  *
  */
@@ -60,36 +76,32 @@ public class UAT_PM_NP_CP_TS01_TC10 extends DriverClass {
 		logger.info("Clicked on the Prospects Tab from the Side Navigation");
 		extentTest.pass(
 				"Clicked on 'Prospects' tab from the Side Navigation bar and navigated to the Prospect Index page");
+		
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
+		
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectCreate = prospectIndex.creatingANewProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
+				
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_success_banner.isDisplayed());
 					agreementCreate = prospectView.clickCreateAgreement();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("agreement"));
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.AGREEMENT_CREATE_SHEET)) {
+				
 					serviceLineCreate = agreementCreate.clickOnAddService();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("service"));
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SL_CREATE_SHEET)) {
+				
 					agreementCreate = serviceLineCreate.clickOnAddServiceForNewAgreement();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("agreement"));
 					agreementView = agreementCreate.clickOnSaveAsQuote();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
 					agreementView.clickOnSaveAndSubmitConf();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
+
 				}
 			}
 		}
@@ -104,19 +116,24 @@ public class UAT_PM_NP_CP_TS01_TC10 extends DriverClass {
 		logger.info("Clicked on the Prospects Tab from the Side Navigation");
 		extentTest.pass(
 				"Clicked on 'Prospects' tab from the Side Navigation bar and navigated to the Prospect Index page");
+		
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
+		
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectView = PageFactory.initElements(wwDriver, ProspectView.class);
+					MethodsUtil.loaderWait();
 					prospectEdit = prospectView.clickEditProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
-					prospectView = prospectEdit.clickOnSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
+				
+					prospectView = prospectEdit.clickOnSaveAndSubmitSuccess();
+					Assert.assertTrue(prospectEdit.prospectEditLocators.pe_save_success_banner.isDisplayed());
+					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
+
 				}
 			}
 		}

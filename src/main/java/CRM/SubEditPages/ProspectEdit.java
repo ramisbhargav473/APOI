@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import CRM.Base.SourcePage;
 import CRM.ReusableComponents.KeywordsUtil;
@@ -48,17 +49,29 @@ public class ProspectEdit extends SourcePage{
 	 */
 	public ProspectView clickOnDiscard() {
 		KeywordsUtil.click(prospectEditLocators.pe_discard_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("view"));
 		return PageFactory.initElements(wwDriver, ProspectView.class);
 	}
 	
 	/**
 	 * @return
 	 */
-	public ProspectView clickOnSaveAndSubmit() {
+	public ProspectView clickOnSaveAndSubmitSuccess() {
 		KeywordsUtil.click(prospectEditLocators.pe_saveandsubmit_button);
-		MethodsUtil.customWait();
+		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("view"));
 		return PageFactory.initElements(wwDriver, ProspectView.class);
+	}
+	
+	/**
+	 * @return
+	 */
+	public ProspectEdit clickOnSaveAndSubmitFailure() {
+		KeywordsUtil.click(prospectEditLocators.pe_saveandsubmit_button);
+		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("edit"));
+		return PageFactory.initElements(wwDriver, ProspectEdit.class);
 	}
 	
 }

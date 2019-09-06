@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import CRM.Base.SourcePage;
 import CRM.MainPages.ProspectIndex;
@@ -43,15 +44,25 @@ public class ProspectCreate extends SourcePage {
 		return locatorsMap;
 	}
 	
-	public ProspectView clickSaveAndSubmit() {
+	public ProspectView clickSaveAndSubmitSuccess() throws InterruptedException {
 		prospectCreateLocators.pc_save_and_submit_button.click();
 		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("view"));
+		Thread.sleep(1000);
 		return PageFactory.initElements(wwDriver, ProspectView.class);
+	}
+	
+	public ProspectCreate clickSaveAndSubmitFailure() {
+		prospectCreateLocators.pc_save_and_submit_button.click();
+		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("create"));
+		return PageFactory.initElements(wwDriver, ProspectCreate.class);
 	}
 	
 	public ProspectIndex clickDiscard() {
 		prospectCreateLocators.pc_discard_button.click();
 		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("prospects"));
 		return PageFactory.initElements(wwDriver, ProspectIndex.class);
 	}
 	

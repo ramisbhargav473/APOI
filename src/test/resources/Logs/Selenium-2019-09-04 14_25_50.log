@@ -1,0 +1,42 @@
+[INFO ] 2019-09-04 14:25:54 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 14:26:00 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 14:26:01 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 14:26:01 [main] onTestStart- PM_NP_CP_TS01_TC04 - Test Started
+[INFO ] 2019-09-04 14:26:11 [main] PM_NP_CP_TS01_TC04- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 14:26:12 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 14:26:13 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 14:26:17 [main] enterText- NewProspect_TC04 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 14:26:18 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 14:26:18 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-09-04 14:26:18 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 14:26:19 [main] enterText- AddressLine 1 is entered in pc_company_address_line1_textfield
+[INFO ] 2019-09-04 14:26:19 [main] enterText- AddressLine 1 is entered in pc_company_address_line2_textfield
+[INFO ] 2019-09-04 14:26:19 [main] enterText- Toronto is entered in pc_company_address_city_textfield
+[INFO ] 2019-09-04 14:26:19 [main] selectDropdownValue- Selecting Canada from the pc_company_address_country_dropdown
+[INFO ] 2019-09-04 14:26:20 [main] selectDropdownValue- Selecting Ontario from the pc_company_address_province_dropdown
+[INFO ] 2019-09-04 14:26:20 [main] enterText- M4S 2H2 is entered in pc_company_address_zipcode_textfield
+[INFO ] 2019-09-04 14:26:23 [main] enterText- Yonge & Soudan 04 is entered in pc_site_name_textfield
+[INFO ] 2019-09-04 14:26:23 [main] selectDropdownValue- Selecting rency Naveen from the pc_site_salesrep_dropdown
+[INFO ] 2019-09-04 14:26:24 [main] enterText- AddressLine 1 is entered in pc_site_address_line1_textfield
+[INFO ] 2019-09-04 14:26:24 [main] enterText- AddressLine 1 is entered in pc_site_address_line2_textfield
+[INFO ] 2019-09-04 14:26:24 [main] enterText- Toronto is entered in pc_site_address_city_textfield
+[INFO ] 2019-09-04 14:26:24 [main] selectDropdownValue- Selecting Canada from the pc_site_address_country_dropdown
+[INFO ] 2019-09-04 14:26:25 [main] selectDropdownValue- Selecting Ontario from the pc_site_address_province_dropdown
+[INFO ] 2019-09-04 14:26:25 [main] enterText- M4S 2H2 is entered in pc_site_address_zipcode_textfield
+[INFO ] 2019-09-04 14:26:28 [main] enterText- TC07Contact is entered in pc_site_contact_textfield
+[INFO ] 2019-09-04 14:26:28 [main] enterText- TC07Position is entered in pc_site_contact_position_textfield
+[INFO ] 2019-09-04 14:26:28 [main] enterText- TC07@email.com is entered in pc_site_email_textfield
+[INFO ] 2019-09-04 14:26:28 [main] enterText- 1234567899 is entered in pc_site_primary_phone_textfield
+[INFO ] 2019-09-04 14:26:29 [main] enterText- 45628 is entered in pc_site_primary_extn_textfield
+[INFO ] 2019-09-04 14:26:29 [main] enterText- 2589631470 is entered in pc_site_secondary_phone_textfield
+[INFO ] 2019-09-04 14:26:29 [main] enterText- 25856 is entered in pc_site_secondary_extn_textfield
+[INFO ] 2019-09-04 14:26:39 [main] selectLevel- Clicked on Contacted decision maker from pe_prospect_levelindicator
+[INFO ] 2019-09-04 14:26:40 [main] clickElement- Clicked on pe_add_contact_button
+[INFO ] 2019-09-04 14:26:42 [main] enterText- TC04Contact is entered in pe_contact_name_textfield
+[INFO ] 2019-09-04 14:26:42 [main] enterText- TC04Position is entered in pe_contact_position_textfield
+[INFO ] 2019-09-04 14:26:43 [main] enterText- TC04@email.com is entered in pe_contact_email_textfield
+[INFO ] 2019-09-04 14:26:43 [main] enterText- 1478529632 is entered in pe_contact_primary_phone_textfield
+[INFO ] 2019-09-04 14:26:43 [main] enterText- 15945 is entered in pe_contact_primary_extn_textfield
+[INFO ] 2019-09-04 14:26:43 [main] enterText- 3579518520 is entered in pe_contact_secondary_phone_textfield
+[INFO ] 2019-09-04 14:26:43 [main] enterText- 25945 is entered in pe_contact_secondary_extn_textfield
+[INFO ] 2019-09-04 14:27:20 [main] onTestFailure- PM_NP_CP_TS01_TC04 - Test Failed

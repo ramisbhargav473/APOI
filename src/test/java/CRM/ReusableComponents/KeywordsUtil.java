@@ -34,7 +34,7 @@ public class KeywordsUtil extends MethodsUtil {
 	 * @param element
 	 */
 	public static void click(WebElement element) {
-		explicitWait.until(ExpectedConditions.visibilityOf(element));
+		explicitWait.until(ExpectedConditions.elementToBeClickable(element));
 		JavascriptExecutor js = (JavascriptExecutor) wwDriver;
 		scope(element);
 		js.executeScript("var evt = document.createEvent('MouseEvents');"
@@ -108,7 +108,7 @@ public class KeywordsUtil extends MethodsUtil {
 		int count = 0;
 
 		for (WebElement option : options) {
-			if (option.getText().toLowerCase().trim().equalsIgnoreCase(value.toLowerCase().trim())) {
+			if (option.getText().toLowerCase().trim().contains(value.toLowerCase().trim())) {
 				logger.info("Selecting " + option.getText() + " from the " + fieldName);
 				extentTest.log(Status.INFO, "Selecting " + option.getText() + " from the " + fieldName);
 				option.click();

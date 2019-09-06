@@ -79,5 +79,9 @@ public class AgreementCreateLocators {
 	public WebElement ac_save_as_quote_button;
 	@FindBy(css = AC_LocatorsConstants.AC_NEXT_BUTTON)
 	public WebElement ac_next_button;
+	@FindBy(css = AC_LocatorsConstants.AC_SAVE_SUCCESS_BANNER)
+	public WebElement ac_save_success_banner;
+	@FindBy(css = AC_LocatorsConstants.AC_SAVE_FAILURE_BANNER)
+	public WebElement ac_save_failure_banner;
 
 }

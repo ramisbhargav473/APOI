@@ -3,6 +3,7 @@ package CRM.SubEditPages.Locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import CRM.SubEditPages.Locators.Constants.PC_LocatorsConstants;
 import CRM.SubEditPages.Locators.Constants.PE_LocatorsConstants;
 
 public class ProspectEditLocators {
@@ -85,5 +86,9 @@ public class ProspectEditLocators {
 	public WebElement pe_discard_button;
 	@FindBy(css = PE_LocatorsConstants.PE_SAVEANDSUBMIT_BUTTON)
 	public WebElement pe_saveandsubmit_button;
+	@FindBy(css = PE_LocatorsConstants.PE_SAVE_SUCCESS_BANNER)
+	public WebElement pe_save_success_banner;
+	@FindBy(css = PE_LocatorsConstants.PE_SAVE_FAILURE_BANNER)
+	public WebElement pe_save_failure_banner;
 
 }

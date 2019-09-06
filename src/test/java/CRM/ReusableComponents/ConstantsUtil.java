@@ -1,8 +1,5 @@
 package CRM.ReusableComponents;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
 /**
  * @author jteja
  *
@@ -10,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class ConstantsUtil {
 
 	//Login credentials
-	public static final String BASE_URL = "https://wishes-uat.azurewebsites.net/";
+	public static final String BASE_URL = "https://wishes-qa.azurewebsites.net/";
 	public static final String USER_NAME = "jteja@gflenv.com";
 	public static final String PASSWORD = "Mrudula@90";
 	public static final String TEST_DATA_PATH = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\NewData.xlsx";

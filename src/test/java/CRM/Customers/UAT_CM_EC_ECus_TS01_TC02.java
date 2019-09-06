@@ -24,6 +24,34 @@ import CRM.ViewPages.AgreementView;
 import CRM.ViewPages.CustomerView;
 import CRM.ViewPages.ProspectView;
 
+/**
+ * Test case full description
+ * 
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CM - Customer Management
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC11 - Test Case 11
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Enter mandatory details and save the prospect with site information - Save Successful
+ ****3. Agreement Create - Create an agreement
+ ****4. Service Line Create - Create a service line and save the agreement (APPROVED/UNDER REVIEW)
+ *
+ *TC11_Edited - Edit scenario test steps
+ ****1. Prospect Index - Search for the prospect that is just created.
+ ****2. Prospect Edit - Edit the prospect and change the prospect level to 50/75 - Save successful.
+ * 
+ * @author jteja
+ *
+ */
 public class UAT_CM_EC_ECus_TS01_TC02 extends DriverClass {
 
 	public static ProspectIndex prospectIndex;
@@ -51,60 +79,52 @@ public class UAT_CM_EC_ECus_TS01_TC02 extends DriverClass {
 
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
-				MethodsUtil.customWait();
+				
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectCreate = prospectIndex.creatingANewProspect();
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
-					Thread.sleep(1000);
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
-					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
-					Thread.sleep(1000);
+				
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
 					prospectEdit = prospectView.clickEditProspect();
-					Thread.sleep(1000);
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
-					prospectView = prospectEdit.clickOnSaveAndSubmit();
-					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
+				
+					prospectView = prospectEdit.clickOnSaveAndSubmitSuccess();
 					siteCreate = prospectView.clickCreateSite();
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SITE_CREATE_SHEET)) {
-					prospectView = siteCreate.clickOnSaveSite();
-					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
+				
+					prospectView = siteCreate.clickOnSaveSiteSuccess();
 					agreementCreate = prospectView.clickCreateAgreement();
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.AGREEMENT_CREATE_SHEET)) {
+				
 					serviceLineCreate = agreementCreate.clickOnAddService();
-					Thread.sleep(1000);
-					Assert.assertTrue(serviceLineCreate.serviceLineCreateLocators.slc_agreements_link.isDisplayed());
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SL_CREATE_SHEET)) {
+				
 					agreementCreate = serviceLineCreate.clickOnAddServiceForNewAgreement();
-					Assert.assertTrue(agreementCreate.agreementCreateLocators.ac_save_as_quote_button.isDisplayed());
 					agreementView = agreementCreate.clickOnSaveAsQuote();
-					KeywordsUtil.click(agreementView.agreementViewLocators.av_save_and_submit_button);
 					agreementView = agreementView.clickOnSaveAndSubmitConf();
-					System.out.println("clicked on confirmation button");
-					MethodsUtil.customWait();
-					System.out.println("page load complete");
-					System.out.println(agreementView.agreementViewLocators.av_status.getText());
-					Assert.assertTrue(agreementView.agreementViewLocators.av_status.getText().toLowerCase().trim()
-							.equalsIgnoreCase("approved"));
 					agreementCustomerCopy = agreementView.clickOnCustomerCopy();
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.AGREEMENT_CUSTOMERCOPY_SHEET)) {
+				
 					agreementCustomerCopy = agreementCustomerCopy.clickOnSubmitDocument();
-					MethodsUtil.customWait();
-					System.out.println(agreementCustomerCopy.agreementCustomerCopyLocators.acc_status_display.getText().toLowerCase().trim());
 					customerIndex = sidePanel.clickCustomers();
-					MethodsUtil.customWait();
-					Thread.sleep(1000);
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.CUSTOMER_INDEX_SHEET)) {
+				
 					customerView = PageFactory.initElements(wwDriver, CustomerView.class);
-					MethodsUtil.customWait();
-					Assert.assertTrue(customerView.customerViewLocators.editCustomer_Button.isDisplayed());
 					customerEdit = customerView.clickEditCustomer();
-					MethodsUtil.customWait();
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.CUSTOMER_EDIT_SHEET)) {
+					
 					customerView = customerEdit.clickSaveChanges();
-					MethodsUtil.customWait();
-					Assert.assertTrue(customerView.customerViewLocators.editCustomer_Button.isDisplayed());
 				}
 			}
 		}

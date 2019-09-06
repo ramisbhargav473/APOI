@@ -1,0 +1,33 @@
+[INFO ] 2019-09-04 14:31:38 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 14:31:45 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 14:31:46 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 14:31:46 [main] onTestStart- PM_NP_CP_TS01_TC04 - Test Started
+[INFO ] 2019-09-04 14:31:55 [main] PM_NP_CP_TS01_TC04- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 14:31:55 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 14:31:56 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 14:32:00 [main] enterText- NewProspect_TC04 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 14:32:01 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 14:32:01 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-09-04 14:32:01 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 14:32:02 [main] enterText- AddressLine 1 is entered in pc_company_address_line1_textfield
+[INFO ] 2019-09-04 14:32:02 [main] enterText- AddressLine 1 is entered in pc_company_address_line2_textfield
+[INFO ] 2019-09-04 14:32:02 [main] enterText- Toronto is entered in pc_company_address_city_textfield
+[INFO ] 2019-09-04 14:32:02 [main] selectDropdownValue- Selecting Canada from the pc_company_address_country_dropdown
+[INFO ] 2019-09-04 14:32:03 [main] selectDropdownValue- Selecting Ontario from the pc_company_address_province_dropdown
+[INFO ] 2019-09-04 14:32:03 [main] enterText- M4S 2H2 is entered in pc_company_address_zipcode_textfield
+[INFO ] 2019-09-04 14:32:06 [main] enterText- Yonge & Soudan 04 is entered in pc_site_name_textfield
+[INFO ] 2019-09-04 14:32:06 [main] selectDropdownValue- Selecting rency Naveen from the pc_site_salesrep_dropdown
+[INFO ] 2019-09-04 14:32:07 [main] enterText- AddressLine 1 is entered in pc_site_address_line1_textfield
+[INFO ] 2019-09-04 14:32:07 [main] enterText- AddressLine 1 is entered in pc_site_address_line2_textfield
+[INFO ] 2019-09-04 14:32:07 [main] enterText- Toronto is entered in pc_site_address_city_textfield
+[INFO ] 2019-09-04 14:32:07 [main] selectDropdownValue- Selecting Canada from the pc_site_address_country_dropdown
+[INFO ] 2019-09-04 14:32:08 [main] selectDropdownValue- Selecting Ontario from the pc_site_address_province_dropdown
+[INFO ] 2019-09-04 14:32:08 [main] enterText- M4S 2H2 is entered in pc_site_address_zipcode_textfield
+[INFO ] 2019-09-04 14:32:11 [main] enterText- TC07Contact is entered in pc_site_contact_textfield
+[INFO ] 2019-09-04 14:32:11 [main] enterText- TC07Position is entered in pc_site_contact_position_textfield
+[INFO ] 2019-09-04 14:32:11 [main] enterText- TC07@email.com is entered in pc_site_email_textfield
+[INFO ] 2019-09-04 14:32:11 [main] enterText- 1234567899 is entered in pc_site_primary_phone_textfield
+[INFO ] 2019-09-04 14:32:12 [main] enterText- 45628 is entered in pc_site_primary_extn_textfield
+[INFO ] 2019-09-04 14:32:12 [main] enterText- 2589631470 is entered in pc_site_secondary_phone_textfield
+[INFO ] 2019-09-04 14:32:12 [main] enterText- 25856 is entered in pc_site_secondary_extn_textfield
+[INFO ] 2019-09-04 14:32:29 [main] onTestFailure- PM_NP_CP_TS01_TC04 - Test Failed

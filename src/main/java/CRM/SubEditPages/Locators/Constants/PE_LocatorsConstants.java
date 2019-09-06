@@ -52,6 +52,8 @@ public class PE_LocatorsConstants {
 	public static final String PE_BILLING_ADDRESS_ZIPCODE_TEXTFIELD = "div[class='container_main prospect_card'] prospect-company-and-billing-address div div div:nth-child(2) wishes-address input[id='id_zipPostalCode']";
 	public static final String PE_DISCARD_BUTTON = "div[class='buttons_sticky_bottom'] button:nth-child(1)";
 	public static final String PE_SAVEANDSUBMIT_BUTTON = "div[class='buttons_sticky_bottom'] button:nth-child(2)";
+	public static final String PE_SAVE_SUCCESS_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container success-snack-bar";
+	public static final String PE_SAVE_FAILURE_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container validation-snack-bar";
 	
 	@Override
 	public String toString() {

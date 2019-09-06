@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,14 +23,30 @@ import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
 /**
- * 1. Prospect Index
- * 2. Prospect Create - Save at 25% - Save successful
- * 3. Site Create - Save successful
- * 4. Agreement Create - Save as Quote - Successful
+ * Test case full description
  * 
- * Edited
- * 1. Prospect Index (Search from grid)
- * 2. Prospect Edit - Save at 50% - Save successful
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CP - Form Validation Failure
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC09 - Test Case 8
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Enter mandatory details and save the prospect at 0% / 25% by giving relevant information. NO SITE - Save Successful
+ ****3. Site Create - Enter site information and save. - Save successful
+ ****4. Agreement Create - Save an agreement as quote - save successful.
+ *
+ *TC08_Edited - Edit scenario test steps
+ ****1. Prospect Index - Search for the prospect that is just created.
+ ****2. Prospect Edit - Edit the prospect and change the prospect level at 50% - Save Successful.
+ * 
  * @author jteja
  *
  */
@@ -60,34 +77,33 @@ public class UAT_PM_NP_CP_TS01_TC08 extends DriverClass {
 		logger.info("Clicked on the Prospects Tab from the Side Navigation");
 		extentTest.pass(
 				"Clicked on 'Prospects' tab from the Side Navigation bar and navigated to the Prospect Index page");
+		
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
+		
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectCreate = prospectIndex.creatingANewProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
+				
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_success_banner.isDisplayed());
 					siteCreate = prospectView.clickCreateSite();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("site"));
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SITE_CREATE_SHEET)) {
-					prospectView = siteCreate.clickOnSaveSite();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
+				
+					prospectView = siteCreate.clickOnSaveSiteSuccess();
+					Assert.assertTrue(siteCreate.siteCreateLocators.sc_save_success_banner.isDisplayed());
 					agreementCreate = prospectView.clickCreateAgreement();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("agreement"));
+
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.AGREEMENT_CREATE_SHEET)) {
+
 					agreementCreate.clickOnSaveAsQuote();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
+					Assert.assertTrue(agreementCreate.agreementCreateLocators.ac_save_success_banner.isDisplayed());
+
 				}
 			}
 		}
@@ -102,19 +118,25 @@ public class UAT_PM_NP_CP_TS01_TC08 extends DriverClass {
 		logger.info("Clicked on the Prospects Tab from the Side Navigation");
 		extentTest.pass(
 				"Clicked on 'Prospects' tab from the Side Navigation bar and navigated to the Prospect Index page");
+	
 		for (String testCaseID : finalDataMap.keySet()) {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
+		
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
+				
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+				
 					prospectView = PageFactory.initElements(wwDriver, ProspectView.class);
+					MethodsUtil.loaderWait();
+					explicitWait.until(ExpectedConditions.urlContains("view"));
 					prospectEdit = prospectView.clickEditProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("edit"));
+					
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
-					prospectView = prospectEdit.clickOnSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
-					Assert.assertTrue(prospectView.prospectViewLocators.CreateSite_Button.isDisplayed());
+
+					prospectView = prospectEdit.clickOnSaveAndSubmitSuccess();
+					Assert.assertTrue(prospectEdit.prospectEditLocators.pe_save_success_banner.isDisplayed());
+					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
+
 				}
 			}
 		}

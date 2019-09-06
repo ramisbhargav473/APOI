@@ -41,7 +41,7 @@ public class UAT_PM_NP_CP_FV_Trigger extends DriverClass {
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectCreate.clickSaveAndSubmit();
+					prospectCreate.clickSaveAndSubmitFailure();
 					MethodsUtil.customWait();
 					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_failure_banner.isDisplayed());

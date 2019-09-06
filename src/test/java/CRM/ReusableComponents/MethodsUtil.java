@@ -25,96 +25,144 @@ import CRM.SubEditPages.SiteCreate;
 import CRM.SubEditPages.SiteEdit;
 import CRM.TestDriver.DriverClass;
 import CRM.ViewPages.AgreementCustomerCopy;
+import CRM.ViewPages.ProspectView;
 
 /**
  * @author jteja
  *
  */
 public class MethodsUtil extends DriverClass {
+	
+	/***************************************************************************************************************/
+	
+	public static int elapsedTime(long startTime, long endTime) {
+		
+		float sec = (endTime - startTime) / 1000F;
+		int seconds = (int) sec;
+		
+		return seconds;
+	}
 
 	/***************************************************************************************************************/
 
 	public static void customWait() {
-		
+
 		try {
-			
+
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-		
+
+			long start = System.currentTimeMillis();
+
 			while (wwDriver.findElements(By.cssSelector("global-loader mat-progress-bar")).size() > 0 || wwDriver
 					.findElements(By.cssSelector(
 							"mat-sidenav-container mat-sidenav-content[class='mat-drawer-content mat-sidenav-content global-loader-loading']"))
 					.size() > 0) {
+
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
+
 			}
-			
+
+			start = System.currentTimeMillis();
+
 			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
 					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
 			
+			start = System.currentTimeMillis();
+
 			while (wwDriver.findElements(By.cssSelector(ConstantsUtil.OVERLAY_CONTAINER)).size() > 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
-			
+
+			start = System.currentTimeMillis();
 			while (wwDriver
 					.findElements(By.cssSelector("div[class='container_card cards__container ng-star-inserted']"))
 					.size() < 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
 			
-			while(wwDriver.findElements(By.cssSelector(ConstantsUtil.VALIDATION_MESSAGES)).size() > 0) {
+			start = System.currentTimeMillis();
+
+			while (wwDriver.findElements(By.cssSelector(ConstantsUtil.VALIDATION_MESSAGES)).size() > 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
-			
+
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		} catch (Exception e) {
-		
+
 		}
 	}
-	
+
 	/***************************************************************************************************************/
 
 	public static void loaderWait() {
-		
+
 		try {
-		
+
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-			
+			long start = System.currentTimeMillis();
 			while (wwDriver.findElements(By.cssSelector("global-loader mat-progress-bar")).size() > 0 || wwDriver
 					.findElements(By.cssSelector(
 							"mat-sidenav-container mat-sidenav-content[class='mat-drawer-content mat-sidenav-content global-loader-loading']"))
 					.size() > 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
 			
-			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
-					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
+			start = System.currentTimeMillis();
+
+			while (wwDriver.findElements(By.cssSelector("mat-spinner")).size() > 0
+					|| wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size() > 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
+
 			}
 			
+
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		} catch (Exception e) {
-		
+
 		}
 	}
-	
-	
+
 	/***************************************************************************************************************/
 
 	public static void spinnerWait() {
-		
+
 		try {
-		
+
 			wwDriver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-			
-			while (wwDriver.findElements(By.cssSelector("mat-spinner"))
-					.size() > 0 /* || wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size()>0 */) {
+			long start = System.currentTimeMillis();
+			while (wwDriver.findElements(By.cssSelector("mat-spinner")).size() > 0
+					|| wwDriver.findElements(By.cssSelector("mat-progress-spinner")).size() > 0) {
+				if(elapsedTime(start, System.currentTimeMillis()) >=10) {
+					break;
+				}
 			}
-			
+
 			wwDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		} catch (Exception e) {
-		
+
 		}
 	}
-	
-	/***************************************************************************************************************/
 
+	/***************************************************************************************************************/
 
 	/**
 	 * @param driver
@@ -136,7 +184,8 @@ public class MethodsUtil extends DriverClass {
 	}
 
 	/**
-	 * @throws InterruptedException *************************************************************************************************************/
+	 * @throws InterruptedException
+	 *************************************************************************************************************/
 
 	public static void executeActions(LinkedHashMap<String, Map<String, Map<String, String>>> dataMap,
 			String testCaseID, String sheetName, LinkedHashMap<String, String> map) throws InterruptedException {
@@ -159,7 +208,8 @@ public class MethodsUtil extends DriverClass {
 	}
 
 	/**
-	 * @throws InterruptedException *************************************************************************************************************/
+	 * @throws InterruptedException
+	 *************************************************************************************************************/
 
 	public static void selector(LinkedHashMap<String, Map<String, Map<String, String>>> finalDataMap, String testCaseID,
 			String sheetName) throws InterruptedException {
@@ -241,6 +291,9 @@ public class MethodsUtil extends DriverClass {
 			break;
 
 		case "ProspectView":
+			ProspectView pvLocators = new ProspectView();
+			locatorsMap = pvLocators.getLocators();
+			MethodsUtil.executeActions(finalDataMap, testCaseID, sheetName, locatorsMap);
 			break;
 
 		case "Quotes":
@@ -282,7 +335,7 @@ public class MethodsUtil extends DriverClass {
 	 * @param fieldName
 	 * @param locator
 	 * @param value
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	public static void performActions(String fieldName, String locator, String value) throws InterruptedException {
 

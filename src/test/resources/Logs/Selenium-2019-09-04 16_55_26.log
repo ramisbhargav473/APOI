@@ -1,0 +1,37 @@
+[INFO ] 2019-09-04 16:55:31 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 16:55:37 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 16:55:37 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 16:55:37 [main] onTestStart- PM_NP_CP_TS01_TC09 - Test Started
+[INFO ] 2019-09-04 16:55:46 [main] PM_NP_CP_TS01_TC09- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 16:55:46 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 16:55:47 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 16:55:51 [main] enterText- NewProspect_09 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 16:55:51 [main] selectDropdownValue- Selecting rency Naveen from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 16:55:52 [main] selectLevel- Clicked on Potential Prospect from pc_prospect_levelindicator
+[INFO ] 2019-09-04 16:55:52 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 16:55:58 [main] enterText- TC08Site is entered in sc_site_name_textfield
+[INFO ] 2019-09-04 16:55:59 [main] selectDropdownValue- Selecting Jeevan Teja from the sc_sales_rep_dropdown
+[INFO ] 2019-09-04 16:56:01 [main] enterText- SiteAddress1 is entered in sc_address_line1_textfield
+[INFO ] 2019-09-04 16:56:01 [main] enterText- SiteAddress2 is entered in sc_address_line2_textfield
+[INFO ] 2019-09-04 16:56:02 [main] enterText- SiteCity is entered in sc_address_ciy_textfield
+[INFO ] 2019-09-04 16:56:02 [main] selectDropdownValue- Selecting Canada from the sc_address_country_dropdown
+[INFO ] 2019-09-04 16:56:02 [main] selectDropdownValue- Selecting Ontario from the sc_address_province_dropdown
+[INFO ] 2019-09-04 16:56:03 [main] enterText- L3Z0J7 is entered in sc_address_zipcode_textfield
+[INFO ] 2019-09-04 16:56:03 [main] enterText- TC09Contact is entered in sc_contact_name_textfield
+[INFO ] 2019-09-04 16:56:03 [main] enterText- TC09Positon is entered in sc_contact_position_textfield
+[INFO ] 2019-09-04 16:56:03 [main] enterText- TC09@email.com is entered in sc_contact_email_textfield
+[INFO ] 2019-09-04 16:56:04 [main] enterText- 1593578420 is entered in sc_contact_primary_phone_textfield
+[INFO ] 2019-09-04 16:56:04 [main] enterText- 25843 is entered in sc_contact_primary_extn_textfield
+[INFO ] 2019-09-04 16:56:04 [main] enterText- 1478523690 is entered in sc_contact_secondary_phone_textfield
+[INFO ] 2019-09-04 16:56:04 [main] enterText- 25734 is entered in sc_contact_secondary_extn_textfield
+[INFO ] 2019-09-04 16:56:12 [main] enterText- 988885 is entered in ac_po_number_textfield
+[INFO ] 2019-09-04 16:56:12 [main] check- ac_mark_as_urgent_checkbox Checkbox is checked
+[INFO ] 2019-09-04 16:56:16 [main] onTestSuccess- PM_NP_CP_TS01_TC09 - Test Successful
+[INFO ] 2019-09-04 16:56:17 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 16:56:17 [main] onTestStart- PM_NP_CP_TS01_TC09_EDITED - Test Started
+[INFO ] 2019-09-04 16:56:19 [main] PM_NP_CP_TS01_TC09_Edited- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 16:56:20 [main] check- pi_prospect_search_checkbox Checkbox is unchecked
+[INFO ] 2019-09-04 16:56:23 [main] selectDropdownValue- Selecting All from the pi_amazon_search_dropdown
+[INFO ] 2019-09-04 16:56:23 [main] enterText- NewProspect_09 is entered in pi_amazon_search_textfield
+[INFO ] 2019-09-04 16:56:24 [main] clickElement- Clicked on pi_amazon_search_search_button
+[INFO ] 2019-09-04 16:56:39 [main] onTestFailure- PM_NP_CP_TS01_TC09_EDITED - Test Failed

@@ -14,9 +14,23 @@ import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
 /**
- * 1. Prospect Index
- * 2. Prospect Index pop-up - Search for a new prospect
- * 3. Prospect Create Page - Skip some mandatory information for 0% - Save Failure.
+ * Test case full description
+ * 
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CP - Form Validation Failure
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC03 - Test Case 3
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Enter leaving mandatory fields blank.(name, sales Rep, BU) - Save failure.
  * 
  * @author jteja
  *
@@ -39,15 +53,15 @@ public class UAT_PM_NP_CP_TS01_TC03 extends DriverClass {
 			for (String sheetName : finalDataMap.get(testCaseID).keySet()) {
 				MethodsUtil.selector(finalDataMap, testCaseID, sheetName);
 				if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_INDEX_SHEET)) {
+					
 					prospectCreate = prospectIndex.creatingANewProspect();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
-					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
+				
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectCreate.clickSaveAndSubmit();
-					MethodsUtil.customWait();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("create"));
+				
+					prospectCreate.clickSaveAndSubmitFailure();
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_failure_banner.isDisplayed());
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_and_submit_button.isDisplayed());
+
 				}
 			}
 		}

@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import CRM.Base.SourcePage;
 import CRM.MainPages.AgreementIndex;
@@ -69,6 +70,7 @@ public class AgreementCreate extends SourcePage {
 	public ServiceLineCreate clickOnAddService() {
 		KeywordsUtil.click(agreementCreateLocators.ac_add_new_service_button);
 		MethodsUtil.loaderWait();
+		explicitWait.until(ExpectedConditions.urlContains("service"));
 		return PageFactory.initElements(wwDriver, ServiceLineCreate.class);
 	}
 	

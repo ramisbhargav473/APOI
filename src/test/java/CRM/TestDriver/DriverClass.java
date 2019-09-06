@@ -50,8 +50,9 @@ public class DriverClass extends SourcePage {
 
 	@AfterSuite
 	public void tearDown() {
-		wwDriver.quit();
-		logger.info("Terminating Chrome Driver Instance");
+		
+		  wwDriver.quit(); logger.info("Terminating Chrome Driver Instance");
+		 
 	}
 
 }

@@ -1,0 +1,7 @@
+[INFO ] 2019-09-04 13:04:12 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 13:04:19 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 13:04:20 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 13:04:20 [main] onTestStart- PM_NP_CP_TS01_TC02 - Test Started
+[INFO ] 2019-09-04 13:04:30 [main] PM_NP_CP_TS01_TC02- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 13:04:30 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 13:04:31 [main] enterInCombobox- Selected NewProspect_TC02 from the pi_create_prospect_popup_combobox

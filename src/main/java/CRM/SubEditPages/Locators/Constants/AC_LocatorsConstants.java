@@ -47,7 +47,9 @@ public class AC_LocatorsConstants {
 	public static final String AC_DISCARD_BUTTON = "div[class='buttons_sticky_bottom customer_views ng-star-inserted'] button:nth-child(1)";
 	public static final String AC_SAVE_AS_QUOTE_BUTTON = "create > div.buttons_sticky_bottom.customer_views.ng-star-inserted > button.button_main_white.createComponent__bottomButton";
 	public static final String AC_NEXT_BUTTON = "div[class='buttons_sticky_bottom customer_views ng-star-inserted'] button:nth-child(3)";
-	
+	public static final String AC_SAVE_SUCCESS_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container success-snack-bar";
+	public static final String AC_SAVE_FAILURE_BANNER = "div[class='cdk-overlay-container'] div[class='cdk-global-overlay-wrapper'] div[class='cdk-overlay-pane'] snack-bar-container validation-snack-bar";
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

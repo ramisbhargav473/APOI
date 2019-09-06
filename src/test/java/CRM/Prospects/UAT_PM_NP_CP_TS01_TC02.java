@@ -15,9 +15,23 @@ import CRM.ReusableComponents.MethodsUtil;
 import CRM.TestDriver.DriverClass;
 
 /**
- * 1. Prospect Index
- * 2. Prospect Index pop-up - Search for a new prospect
- * 3. Prospect Create Page - Enter mandatory information for 0% and save - Save successful
+ * Test case full description
+ * 
+ * PM - Prospect Management
+ ****We are primarily dealing with the scenarios pertaining to prospects.
+ * 
+ * CP - Form Validation Failure
+ ****This means that in this test case, we are purposefully making the validation to be triggered. So we will be checking for validation
+ ****failure messages to be triggered at the end of test case. If it is triggered, then the test is a PASS.
+ *
+ * TS01 - Test Scenario 1
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Save prospect successfully with site information. (lands on Prospect View page)
+ ****3. Site Edit - Save site with incomplete information. (Checks to be done in all the possible tabs)
+ *
+ * TC02 - Test Case 2
+ ****1. Prospect Index - New Prospect (lands on Prospect Create page)
+ ****2. Prospect Create - Enter minimum details (name, sales Rep, BU) - Save successful.
  * 
  * @author jteja
  *
@@ -47,8 +61,8 @@ public class UAT_PM_NP_CP_TS01_TC02 extends DriverClass {
 				
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
 				
-					prospectView = prospectCreate.clickSaveAndSubmit();
-					Assert.assertTrue(wwDriver.getCurrentUrl().contains("view"));
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
+					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_save_success_banner.isDisplayed());
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isEnabled());
 				
 				}

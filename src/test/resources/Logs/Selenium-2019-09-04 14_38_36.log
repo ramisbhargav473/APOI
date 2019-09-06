@@ -1,0 +1,12 @@
+[INFO ] 2019-09-04 14:38:41 [main] setUp- Test Data excel is loaded
+[INFO ] 2019-09-04 14:38:47 [main] setUp- Logged into Wishes Application
+[INFO ] 2019-09-04 14:38:48 [main] onTestStart- ---------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2019-09-04 14:38:48 [main] onTestStart- PM_NP_CP_TS01_TC05 - Test Started
+[INFO ] 2019-09-04 14:38:55 [main] PM_NP_CP_TS01_TC05- Clicked on the Prospects Tab from the Side Navigation
+[INFO ] 2019-09-04 14:38:55 [main] clickElement- Clicked on pi_new_prospect_button
+[INFO ] 2019-09-04 14:38:57 [main] enterInCombobox- No Results found
+[INFO ] 2019-09-04 14:39:01 [main] enterText- NewProspect_TC05 is entered in pc_company_name_textfield
+[INFO ] 2019-09-04 14:39:01 [main] selectDropdownValue- Selecting Jeevan Teja from the pc_salesrep_dropdown
+[INFO ] 2019-09-04 14:39:01 [main] selectLevel- Clicked on Contacted decision maker from pc_prospect_levelindicator
+[INFO ] 2019-09-04 14:39:02 [main] selectDropdownValue- Selecting Halifax (HIT) from the pc_business_unit_dropdown
+[INFO ] 2019-09-04 14:39:12 [main] onTestFailure- PM_NP_CP_TS01_TC05 - Test Failed

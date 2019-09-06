@@ -1,33 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="WishesAutomation" parallel="classes" thread-count="8" >
+<suite name="WishesAutomation" parallel="classes" thread-count="8">
 	<listeners>
-		<listener
-			class-name="CRM.TestListeners.WishesTestListeners"></listener>
+		<listener class-name="CRM.TestListeners.WishesTestListeners"></listener>
 	</listeners>
 	<test thread-count="5" name="PM Test">
 		<classes>
-			<class
-				name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01" />
-				<!-- <class
-				name="CRM.Sites.UAT_SM_NS_FVF_TC07" /> -->
-				<!-- <class
-				name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01" /> -->
-			<!-- <class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC02" /> -->
-			<!-- <class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC03" />
-			<class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC04" />
-			<class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC05" />
-			<class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC06" />
-			<class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC07" /> -->
-				<!-- <class
-				name="GFL.Wishes.CRM.TestCases.ProspectManagement.NewProspect.UAT_PM_NP_CP_TS01_TC08" /> -->
-			<!-- <class name="CRM.Agreements.UAT_CSAM_CA_TS01_TC01" /> -->
+
+			<!-- PROSPECT MANAGEMENT -->
+
+				<!-- TSO1 -->
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC01"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC02"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC03"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC04"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC05"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC06"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC07"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC08"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC09"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC10"/>
+				<class name="CRM.Prospects.UAT_PM_NP_CP_TS01_TC11"/>
+				
+				<!-- TS02 -->
+				<!-- <class name=CRM.Prospects.UAT_PM_NP_CP_TS02_TC01</class>
+				<class name=CRM.Prospects.UAT_PM_NP_CP_TS02_TC02</class> -->
+				
+				<!-- FV -->
+				<!-- <class name=CRM.Prospects.UAT_PM_NP_CP_FV_Trigger</class> -->
+
+			<!-- CUSTOMER MANAGEMENT -->
+				
+				<!-- TSO1 -->
+				<!-- <class name=CRM.Customers.UAT_CM_EC_ECus_TS01_TC01</class>
+				<class name=CRM.Customers.UAT_CM_EC_ECus_TS01_TC02</class>
+				<class name=CRM.Customers.UAT_CM_EC_ECus_TS01_TC03</class>
+				<class name=CRM.Customers.UAT_CM_EC_ECus_TS01_TC04</class>
+				<class name=CRM.Customers.UAT_CM_EC_ECus_TS01_TC05</class> -->
+
+			<!-- AGREEMENTS -->
+			
+				<!-- TS01 -->
+				<!-- <class name=CRM.Agreements.UAT_CSAM_CA_TS01_TC01</class>
+				<class name=CRM.Agreements.UAT_CSAM_CA_TS01_TC02</class> -->
+
+			<!-- APPROVAL CONDITIONS -->
+				
+				<!-- TS01 -->
+				<!-- <class name=CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC01</class>
+				<class name=CRM.ApprovalConditions.UAT_CAPR_APCON_TS01_TC02</class> -->
+
+			<!-- SITE MANAGEMENT -->
+			
+				<!-- ES -->
+				<!-- <class name=CRM.Sites.UAT_SM_NS_FVF_TC01</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC02</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC03</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC04</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC05</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC06</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC07</class>
+				<class name=CRM.Sites.UAT_SM_NS_FVF_TC08</class> -->
+				
+				<!-- NS -->
+				<!-- <class name=CRM.Sites.UAT_SM_ES_FVF_TC01</class> -->
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

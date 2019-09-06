@@ -3,6 +3,8 @@ package CRM.ViewPages.Locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import CRM.ViewPages.Locators.Constants.PV_LocatorsConstants;
+
 /**
  * @author jteja
  *
@@ -24,16 +26,24 @@ public class ProspectViewLocators {
 
 	/********************** Buttons in View Prospects page **************************************/
 	
-	@FindBy(css="div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(1)")
+	@FindBy(css="div.buttons_sticky_bottom.ng-star-inserted > button.button_main_orange.ng-star-inserted")
 	public WebElement EditProspect_Button;
 	
-	@FindBy(css="div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(2)")
+	@FindBy(css="div.buttons_sticky_bottom.ng-star-inserted > button:nth-child(2)")
 	public WebElement CreateSite_Button;
 	
-	@FindBy(css="div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(3)")
+	@FindBy(css="div.buttons_sticky_bottom.ng-star-inserted > button:nth-child(3)")
 	public WebElement MarkAsLost_Button;
 	
-	@FindBy(css="div[class='buttons_sticky_bottom ng-star-inserted'] button:nth-child(4)")
+	@FindBy(css="div.buttons_sticky_bottom.ng-star-inserted > button:nth-child(4)")
 	public WebElement CreateAgreement_Button;
+	
+	
+	
+	@FindBy(css = PV_LocatorsConstants.PV_SAVE_SUCCESS_BANNER)
+	public WebElement pe_save_success_banner;
+	@FindBy(css = PV_LocatorsConstants.PV_SAVE_FAILURE_BANNER)
+	public WebElement pe_save_failure_banner;
+
 	
 }
