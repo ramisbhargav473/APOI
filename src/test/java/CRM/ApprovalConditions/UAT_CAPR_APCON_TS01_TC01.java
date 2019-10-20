@@ -68,7 +68,7 @@ public class UAT_CAPR_APCON_TS01_TC01 extends DriverClass {
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
 					Thread.sleep(2000);
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
 					Thread.sleep(1000);
 					agreementCreate = prospectView.clickCreateAgreement();

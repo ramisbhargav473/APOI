@@ -1,9 +1,15 @@
+
 # GFL.Wishes
-
 Test Automation framework for Wishes CRM project.
+Project Information:
+	•	Design Pattern 
+		o	Page Object Model
+	•	Framework
+		o	TestNG
+		o	Data Driven
+		o	Keyword Driven
+	•	Reports
+		o	Extent Reports
+	•	Logs
+		o	Log4j2
 
-This project uses 
-	1. Page Object Model Design pattern using page factories
-	2. Data Driven framework
-	3. Keyword driven framework.
-	4. checking merge
