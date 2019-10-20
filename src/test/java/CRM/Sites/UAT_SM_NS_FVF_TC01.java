@@ -66,7 +66,7 @@ public class UAT_SM_NS_FVF_TC01 extends DriverClass{
 				
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
 					
-					prospectView = prospectCreate.clickSaveAndSubmit();
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
 					explicitWait.until(ExpectedConditions.urlContains("view"));
 					
 					siteCreate = prospectView.clickCreateSite();
@@ -74,7 +74,7 @@ public class UAT_SM_NS_FVF_TC01 extends DriverClass{
 				
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SITE_CREATE_SHEET)) {
 					
-					siteCreate.clickOnSaveSite();
+					siteCreate.clickOnSaveSiteFailure();
 					Assert.assertTrue(siteCreate.siteCreateLocators.sc_save_failure_banner.isDisplayed(), "The Save Failure Banner is not displayed");
 					
 				}

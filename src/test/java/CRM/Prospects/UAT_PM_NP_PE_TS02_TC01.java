@@ -48,19 +48,19 @@ public class UAT_PM_NP_PE_TS02_TC01 extends DriverClass {
 					MethodsUtil.customWait();
 					Assert.assertTrue(prospectCreate.prospectCreateLocators.pc_company_name_textfield.isDisplayed());
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_CREATE_SHEET)) {
-					prospectView = prospectCreate.clickSaveAndSubmit();
+					prospectView = prospectCreate.clickSaveAndSubmitSuccess();
 					MethodsUtil.customWait();
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
 					prospectEdit = prospectView.clickEditProspect();
 					MethodsUtil.customWait();
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.PROSPECT_EDIT_SHEET)) {
-					prospectView = prospectEdit.clickOnSaveAndSubmit();
+					prospectView = prospectEdit.clickOnSaveAndSubmitSuccess();
 					MethodsUtil.customWait();
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
 					siteCreate = prospectView.clickCreateSite();
 					MethodsUtil.customWait();
 				} else if (sheetName.equalsIgnoreCase(ConstantsUtil.SITE_CREATE_SHEET)) {
-					prospectView = siteCreate.clickOnSaveSite();
+					prospectView = siteCreate.clickOnSaveSiteSuccess();
 					MethodsUtil.customWait();
 					Assert.assertTrue(prospectView.prospectViewLocators.EditProspect_Button.isDisplayed());
 					agreementCreate = prospectView.clickCreateAgreement();
